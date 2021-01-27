@@ -1,0 +1,65 @@
+INFO  22:47:31,346 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:47:31,410 - #8 program
+INFO  22:47:31,411 - #37 MJProgram
+INFO  22:47:31,411 - #37 int
+INFO  22:47:31,412 - #37 x
+INFO  22:47:31,418 - #16 ;
+INFO  22:47:31,418 - #37 int
+INFO  22:47:31,419 - #37 y
+INFO  22:47:31,420 - #16 ;
+INFO  22:47:31,420 - #6 {
+INFO  22:47:31,420 - #37 int
+INFO  22:47:31,421 - #37 k
+INFO  22:47:31,421 - #2 (
+INFO  22:47:31,422 - #3 )
+INFO  22:47:31,422 - #37 int
+INFO  22:47:31,422 - #37 c
+INFO  22:47:31,423 - #16 ;
+INFO  22:47:31,423 - #6 {
+INFO  22:47:31,423 - #37 c
+INFO  22:47:31,424 - #20 =
+INFO  22:47:31,425 - #36 1
+INFO  22:47:31,425 - #16 ;
+INFO  22:47:31,428 - #14 return
+INFO  22:47:31,429 - #37 c
+INFO  22:47:31,429 - #22 +
+INFO  22:47:31,429 - #36 2
+INFO  22:47:31,431 - #16 ;
+INFO  22:47:31,431 - #7 }
+INFO  22:47:31,432 - #37 int
+INFO  22:47:31,433 - #37 main
+INFO  22:47:31,433 - #2 (
+INFO  22:47:31,433 - #3 )
+INFO  22:47:31,434 - #6 {
+INFO  22:47:31,434 - #37 y
+INFO  22:47:31,434 - #20 =
+INFO  22:47:31,434 - #36 2
+INFO  22:47:31,434 - #16 ;
+INFO  22:47:31,434 - #37 x
+INFO  22:47:31,434 - #20 =
+INFO  22:47:31,435 - #37 y
+INFO  22:47:31,435 - #22 +
+INFO  22:47:31,435 - #36 2
+INFO  22:47:31,435 - #16 ;
+INFO  22:47:31,435 - #37 y
+INFO  22:47:31,435 - #20 =
+INFO  22:47:31,436 - #37 k
+INFO  22:47:31,436 - #2 (
+INFO  22:47:31,436 - #3 )
+INFO  22:47:31,437 - #22 +
+INFO  22:47:31,437 - #36 3
+INFO  22:47:31,438 - #16 ;
+INFO  22:47:31,438 - #10 print
+INFO  22:47:31,438 - #2 (
+INFO  22:47:31,438 - #37 y
+INFO  22:47:31,438 - #3 )
+INFO  22:47:31,439 - #16 ;
+INFO  22:47:31,439 - #14 return
+INFO  22:47:31,439 - #36 0
+INFO  22:47:31,439 - #16 ;
+INFO  22:47:31,440 - #7 }
+INFO  22:47:31,440 - #7 }
+INFO  22:47:31,517 - Deklarisana promenljiva x na liniji 2
+INFO  22:47:31,517 - Deklarisana promenljiva y na liniji 2
+INFO  22:47:31,520 - Obradjuje se funkcija k na liniji 5
+INFO  22:47:31,521 - Deklarisana promenljiva c na liniji 5

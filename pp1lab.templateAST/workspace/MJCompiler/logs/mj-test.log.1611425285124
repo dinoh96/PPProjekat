@@ -1,0 +1,59 @@
+INFO  19:07:27,304 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:07:27,350 - #8 program
+INFO  19:07:27,351 - #38 test301
+INFO  19:07:27,351 - #6 {
+INFO  19:07:27,352 - #15 void
+INFO  19:07:27,353 - #38 main
+INFO  19:07:27,353 - #2 (
+INFO  19:07:27,353 - #3 )
+INFO  19:07:27,354 - #38 int
+INFO  19:07:27,355 - #38 bodovi
+INFO  19:07:27,355 - #17 ;
+INFO  19:07:27,357 - #38 char
+INFO  19:07:27,357 - #38 c
+INFO  19:07:27,358 - #17 ;
+INFO  19:07:27,358 - #38 int
+INFO  19:07:27,358 - #38 a
+INFO  19:07:27,358 - #4 [
+INFO  19:07:27,358 - #5 ]
+INFO  19:07:27,358 - #17 ;
+INFO  19:07:27,359 - #6 {
+INFO  19:07:27,359 - #9 read
+INFO  19:07:27,384 - #2 (
+INFO  19:07:27,385 - #38 bodovi
+INFO  19:07:27,385 - #3 )
+INFO  19:07:27,386 - #17 ;
+INFO  19:07:27,386 - #10 print
+INFO  19:07:27,386 - #2 (
+INFO  19:07:27,386 - #38 bodovi
+INFO  19:07:27,386 - #3 )
+INFO  19:07:27,388 - #17 ;
+INFO  19:07:27,388 - #9 read
+INFO  19:07:27,388 - #2 (
+INFO  19:07:27,388 - #38 c
+INFO  19:07:27,388 - #3 )
+INFO  19:07:27,388 - #17 ;
+INFO  19:07:27,388 - #10 print
+INFO  19:07:27,389 - #2 (
+INFO  19:07:27,389 - #38 c
+INFO  19:07:27,389 - #3 )
+INFO  19:07:27,389 - #17 ;
+INFO  19:07:27,389 - #10 print
+INFO  19:07:27,389 - #2 (
+INFO  19:07:27,389 - #37 13
+INFO  19:07:27,390 - #3 )
+INFO  19:07:27,390 - #17 ;
+INFO  19:07:27,390 - #10 print
+INFO  19:07:27,390 - #2 (
+INFO  19:07:27,390 - #40 a
+INFO  19:07:27,390 - #3 )
+INFO  19:07:27,390 - #17 ;
+INFO  19:07:27,391 - #7 }
+INFO  19:07:27,391 - #7 }
+INFO  19:07:27,399 - Obradjuje se funkcija main na liniji 5
+INFO  19:07:27,399 - Deklarisana promenljiva bodovi na liniji 6
+INFO  19:07:27,399 - Deklarisana promenljiva c na liniji 7
+INFO  19:07:27,399 - Deklarisana promenljiva a na liniji 8
+INFO  19:07:27,400 - Print calls = 4
+INFO  19:07:27,400 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  19:07:27,404 - Parsiranje uspesno zavrseno!

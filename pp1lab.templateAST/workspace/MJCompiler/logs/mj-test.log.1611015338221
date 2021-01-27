@@ -1,0 +1,42 @@
+INFO  01:14:30,435 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  01:14:30,626 - #8 program
+INFO  01:14:30,626 - #38 test301
+INFO  01:14:30,626 - #6 {
+INFO  01:14:30,628 - #15 void
+INFO  01:14:30,629 - #38 main
+INFO  01:14:30,629 - #2 (
+INFO  01:14:30,630 - #3 )
+INFO  01:14:30,630 - #38 int
+INFO  01:14:30,632 - #38 bodovi
+INFO  01:14:30,633 - #17 ;
+INFO  01:14:30,638 - #38 char
+INFO  01:14:30,642 - #38 c
+INFO  01:14:30,643 - #17 ;
+INFO  01:14:30,643 - #6 {
+INFO  01:14:30,643 - #38 bodovi
+INFO  01:14:30,644 - #21 =
+INFO  01:14:30,647 - #37 2
+INFO  01:14:30,647 - #17 ;
+INFO  01:14:30,650 - #10 print
+INFO  01:14:30,651 - #2 (
+INFO  01:14:30,653 - #38 bodovi
+INFO  01:14:30,653 - #3 )
+INFO  01:14:30,654 - #17 ;
+INFO  01:14:30,654 - #9 read
+INFO  01:14:30,655 - #2 (
+INFO  01:14:30,655 - #38 c
+INFO  01:14:30,655 - #3 )
+INFO  01:14:30,655 - #17 ;
+INFO  01:14:30,655 - #10 print
+INFO  01:14:30,655 - #2 (
+INFO  01:14:30,655 - #38 c
+INFO  01:14:30,655 - #3 )
+INFO  01:14:30,656 - #17 ;
+INFO  01:14:30,656 - #7 }
+INFO  01:14:30,656 - #7 }
+INFO  01:14:30,686 - Obradjuje se funkcija main na liniji 5
+INFO  01:14:30,686 - Deklarisana promenljiva bodovi na liniji 6
+INFO  01:14:30,688 - Deklarisana promenljiva c na liniji 7
+INFO  01:14:30,689 - Print calls = 2
+INFO  01:14:30,694 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  01:14:59,647 - Parsiranje uspesno zavrseno!

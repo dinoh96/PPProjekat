@@ -1,0 +1,81 @@
+INFO  02:40:52,213 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  02:40:52,371 - #8 program
+INFO  02:40:52,372 - #38 MJProgram
+INFO  02:40:52,372 - #38 int
+INFO  02:40:52,373 - #38 x
+INFO  02:40:52,374 - #17 ;
+INFO  02:40:52,375 - #38 int
+INFO  02:40:52,376 - #38 y
+INFO  02:40:52,376 - #17 ;
+INFO  02:40:52,377 - #16 const
+INFO  02:40:52,377 - #38 int
+INFO  02:40:52,377 - #38 z
+INFO  02:40:52,377 - #21 =
+INFO  02:40:52,377 - #37 0
+INFO  02:40:52,377 - #17 ;
+INFO  02:40:52,379 - #16 const
+INFO  02:40:52,383 - #38 char
+INFO  02:40:52,384 - #38 w
+INFO  02:40:52,384 - #21 =
+INFO  02:40:52,385 - #40 d
+INFO  02:40:52,385 - #17 ;
+INFO  02:40:52,388 - #6 {
+INFO  02:40:52,388 - #38 int
+INFO  02:40:52,389 - #38 k
+INFO  02:40:52,389 - #2 (
+INFO  02:40:52,389 - #3 )
+INFO  02:40:52,390 - #38 int
+INFO  02:40:52,391 - #38 c
+INFO  02:40:52,391 - #17 ;
+INFO  02:40:52,391 - #6 {
+INFO  02:40:52,391 - #38 c
+INFO  02:40:52,392 - #21 =
+INFO  02:40:52,393 - #37 1
+INFO  02:40:52,393 - #22 -
+INFO  02:40:52,395 - #37 2
+INFO  02:40:52,396 - #17 ;
+INFO  02:40:52,396 - #14 return
+INFO  02:40:52,396 - #38 c
+INFO  02:40:52,396 - #23 +
+INFO  02:40:52,397 - #37 2
+INFO  02:40:52,398 - #17 ;
+INFO  02:40:52,398 - #7 }
+INFO  02:40:52,398 - #38 int
+INFO  02:40:52,400 - #38 main
+INFO  02:40:52,400 - #2 (
+INFO  02:40:52,400 - #3 )
+INFO  02:40:52,400 - #6 {
+INFO  02:40:52,400 - #38 y
+INFO  02:40:52,400 - #21 =
+INFO  02:40:52,400 - #37 2
+INFO  02:40:52,401 - #17 ;
+INFO  02:40:52,401 - #38 x
+INFO  02:40:52,401 - #21 =
+INFO  02:40:52,401 - #38 y
+INFO  02:40:52,401 - #23 +
+INFO  02:40:52,401 - #37 2
+INFO  02:40:52,401 - #17 ;
+INFO  02:40:52,401 - #38 y
+INFO  02:40:52,401 - #21 =
+INFO  02:40:52,402 - #38 k
+INFO  02:40:52,402 - #2 (
+INFO  02:40:52,402 - #3 )
+INFO  02:40:52,402 - #23 +
+INFO  02:40:52,403 - #37 3
+INFO  02:40:52,403 - #17 ;
+INFO  02:40:52,403 - #10 print
+INFO  02:40:52,403 - #2 (
+INFO  02:40:52,403 - #38 y
+INFO  02:40:52,404 - #3 )
+INFO  02:40:52,404 - #17 ;
+INFO  02:40:52,404 - #14 return
+INFO  02:40:52,405 - #37 0
+INFO  02:40:52,405 - #17 ;
+INFO  02:40:52,405 - #7 }
+INFO  02:40:52,405 - #7 }
+INFO  02:40:52,426 - Deklarisana promenljiva x na liniji 2
+INFO  02:40:52,426 - Deklarisana promenljiva y na liniji 2
+INFO  02:40:52,426 - Deklarisana konstanta z sa vrednoscu 0 na liniji 2
+INFO  02:40:52,427 - Deklarisana konstanta w sa vrednoscu 100 na liniji 2
+INFO  02:40:52,427 - Obradjuje se funkcija k na liniji 4
+INFO  02:40:52,427 - Deklarisana promenljiva c na liniji 4

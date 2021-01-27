@@ -1,0 +1,27 @@
+INFO  19:36:02,418 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:36:02,453 - #8 program
+INFO  19:36:02,453 - #37 MJProgram
+INFO  19:36:02,453 - #37 int
+INFO  19:36:02,454 - #37 x
+INFO  19:36:02,455 - #16 ;
+INFO  19:36:02,455 - #37 int
+INFO  19:36:02,456 - #37 y
+INFO  19:36:02,456 - #16 ;
+INFO  19:36:02,456 - #6 {
+INFO  19:36:02,456 - #37 int
+INFO  19:36:02,457 - #37 k
+INFO  19:36:02,457 - #2 (
+INFO  19:36:02,458 - #3 )
+INFO  19:36:02,459 - #37 int
+INFO  19:36:02,459 - #37 c
+INFO  19:36:02,459 - #16 ;
+INFO  19:36:02,460 - #6 {
+INFO  19:36:02,460 - #37 c
+INFO  19:36:02,461 - #20 =
+INFO  19:36:02,462 - #36 1
+ERROR 19:36:02,462 - 
+Sintaksna greska na liniji 7
+INFO  19:36:02,463 - #16 ;
+INFO  19:36:02,463 - #14 return
+INFO  19:36:02,463 - #37 c
+INFO  19:36:02,464 - #22 +

@@ -1,0 +1,22 @@
+INFO  22:08:17,907 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:08:17,951 - #8 program
+INFO  22:08:17,951 - #38 test302
+INFO  22:08:17,951 - #6 {
+INFO  22:08:17,953 - #38 int
+INFO  22:08:17,954 - #38 main
+INFO  22:08:17,954 - #2 (
+INFO  22:08:17,955 - #3 )
+INFO  22:08:17,955 - #6 {
+INFO  22:08:17,956 - #10 print
+INFO  22:08:17,957 - #2 (
+INFO  22:08:17,957 - #37 0
+INFO  22:08:17,957 - #3 )
+INFO  22:08:17,960 - #17 ;
+INFO  22:08:17,961 - #7 }
+INFO  22:08:17,961 - #7 }
+ERROR 22:08:17,975 - Semanticka greska na liniji 5 : Tip povratne vrednosti 'main' funkcije mora biti tipa 'void'
+INFO  22:08:17,975 - Obradjuje se funkcija main na liniji 5
+ERROR 22:08:17,978 - Semanticka greska na liniji 5: funcija main nema return iskaz!
+ERROR 22:08:17,978 - Semanticka greska na liniji 3 : Nije pronadjena 'main' funkcija
+INFO  22:08:17,978 - Print calls = 1
+ERROR 22:08:17,979 - Parsiranje NIJE uspesno zavrseno!

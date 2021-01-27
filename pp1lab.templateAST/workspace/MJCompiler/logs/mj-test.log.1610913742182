@@ -1,0 +1,314 @@
+INFO  20:58:56,152 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:58:56,204 - #8 program
+INFO  20:58:56,204 - #38 p
+INFO  20:58:56,204 - #16 const
+INFO  20:58:56,205 - #38 int
+INFO  20:58:56,206 - #38 size
+INFO  20:58:56,206 - #21 =
+INFO  20:58:56,206 - #37 10
+INFO  20:58:56,207 - #17 ;
+INFO  20:58:56,208 - #38 int
+INFO  20:58:56,209 - #38 pos
+INFO  20:58:56,209 - #4 [
+INFO  20:58:56,209 - #5 ]
+INFO  20:58:56,209 - #19 ,
+INFO  20:58:56,211 - #38 neg
+INFO  20:58:56,211 - #4 [
+INFO  20:58:56,211 - #5 ]
+INFO  20:58:56,212 - #17 ;
+INFO  20:58:56,213 - #6 {
+INFO  20:58:56,213 - #15 void
+INFO  20:58:56,214 - #38 putp
+INFO  20:58:56,214 - #2 (
+INFO  20:58:56,215 - #38 int
+INFO  20:58:56,215 - #38 a
+INFO  20:58:56,215 - #19 ,
+INFO  20:58:56,216 - #38 int
+INFO  20:58:56,216 - #38 idx
+INFO  20:58:56,216 - #3 )
+INFO  20:58:56,216 - #6 {
+INFO  20:58:56,217 - #38 pos
+INFO  20:58:56,218 - #4 [
+INFO  20:58:56,218 - #38 idx
+INFO  20:58:56,218 - #5 ]
+INFO  20:58:56,220 - #21 =
+INFO  20:58:56,220 - #38 a
+INFO  20:58:56,220 - #17 ;
+INFO  20:58:56,221 - #7 }
+INFO  20:58:56,221 - #15 void
+INFO  20:58:56,222 - #38 putn
+INFO  20:58:56,222 - #2 (
+INFO  20:58:56,223 - #38 int
+INFO  20:58:56,223 - #38 a
+INFO  20:58:56,223 - #19 ,
+INFO  20:58:56,223 - #38 int
+INFO  20:58:56,223 - #38 idx
+INFO  20:58:56,223 - #3 )
+INFO  20:58:56,223 - #6 {
+INFO  20:58:56,223 - #38 neg
+INFO  20:58:56,224 - #4 [
+INFO  20:58:56,224 - #38 idx
+INFO  20:58:56,224 - #5 ]
+INFO  20:58:56,224 - #21 =
+INFO  20:58:56,224 - #38 a
+INFO  20:58:56,224 - #17 ;
+INFO  20:58:56,224 - #7 }
+INFO  20:58:56,224 - #38 int
+INFO  20:58:56,225 - #38 getp
+INFO  20:58:56,225 - #2 (
+INFO  20:58:56,225 - #38 int
+INFO  20:58:56,225 - #38 idx
+INFO  20:58:56,225 - #3 )
+INFO  20:58:56,225 - #6 {
+INFO  20:58:56,225 - #14 return
+INFO  20:58:56,225 - #38 pos
+INFO  20:58:56,225 - #4 [
+INFO  20:58:56,226 - #38 idx
+INFO  20:58:56,226 - #5 ]
+INFO  20:58:56,226 - #17 ;
+INFO  20:58:56,226 - #7 }
+INFO  20:58:56,226 - #38 int
+INFO  20:58:56,226 - #38 getn
+INFO  20:58:56,226 - #2 (
+INFO  20:58:56,226 - #38 int
+INFO  20:58:56,226 - #38 idx
+INFO  20:58:56,227 - #3 )
+INFO  20:58:56,227 - #6 {
+INFO  20:58:56,227 - #14 return
+INFO  20:58:56,227 - #38 neg
+INFO  20:58:56,227 - #4 [
+INFO  20:58:56,227 - #38 idx
+INFO  20:58:56,227 - #5 ]
+INFO  20:58:56,227 - #17 ;
+INFO  20:58:56,227 - #7 }
+INFO  20:58:56,227 - #15 void
+INFO  20:58:56,227 - #38 f
+INFO  20:58:56,228 - #2 (
+INFO  20:58:56,228 - #38 char
+INFO  20:58:56,228 - #38 ch
+INFO  20:58:56,228 - #19 ,
+INFO  20:58:56,228 - #38 int
+INFO  20:58:56,228 - #38 a
+INFO  20:58:56,228 - #19 ,
+INFO  20:58:56,228 - #38 int
+INFO  20:58:56,228 - #38 arg
+INFO  20:58:56,228 - #3 )
+INFO  20:58:56,229 - #38 int
+INFO  20:58:56,229 - #38 x
+INFO  20:58:56,229 - #17 ;
+INFO  20:58:56,229 - #6 {
+INFO  20:58:56,230 - #38 x
+INFO  20:58:56,230 - #21 =
+INFO  20:58:56,235 - #38 arg
+INFO  20:58:56,236 - #17 ;
+INFO  20:58:56,236 - #7 }
+INFO  20:58:56,236 - #15 void
+INFO  20:58:56,236 - #38 main
+INFO  20:58:56,236 - #2 (
+INFO  20:58:56,236 - #3 )
+INFO  20:58:56,237 - #38 int
+INFO  20:58:56,237 - #38 x
+INFO  20:58:56,237 - #19 ,
+INFO  20:58:56,237 - #38 i
+INFO  20:58:56,237 - #17 ;
+INFO  20:58:56,237 - #38 char
+INFO  20:58:56,237 - #38 c
+INFO  20:58:56,237 - #17 ;
+INFO  20:58:56,237 - #6 {
+INFO  20:58:56,237 - #38 pos
+INFO  20:58:56,237 - #21 =
+INFO  20:58:56,238 - #13 new
+INFO  20:58:56,238 - #38 int
+INFO  20:58:56,238 - #4 [
+INFO  20:58:56,238 - #38 size
+INFO  20:58:56,238 - #5 ]
+INFO  20:58:56,239 - #17 ;
+INFO  20:58:56,239 - #38 neg
+INFO  20:58:56,239 - #21 =
+INFO  20:58:56,239 - #13 new
+INFO  20:58:56,239 - #38 int
+INFO  20:58:56,239 - #4 [
+INFO  20:58:56,239 - #38 size
+INFO  20:58:56,239 - #5 ]
+INFO  20:58:56,240 - #17 ;
+INFO  20:58:56,240 - #38 i
+INFO  20:58:56,240 - #21 =
+INFO  20:58:56,240 - #37 0
+INFO  20:58:56,240 - #17 ;
+INFO  20:58:56,241 - #41 if
+INFO  20:58:56,241 - #2 (
+INFO  20:58:56,241 - #37 1
+INFO  20:58:56,241 - #31 ==
+INFO  20:58:56,241 - #37 1
+INFO  20:58:56,242 - #3 )
+INFO  20:58:56,246 - #6 {
+INFO  20:58:56,247 - #10 print
+INFO  20:58:56,248 - #2 (
+INFO  20:58:56,248 - #37 1
+INFO  20:58:56,248 - #3 )
+INFO  20:58:56,249 - #17 ;
+INFO  20:58:56,249 - #7 }
+INFO  20:58:56,249 - #42 else
+INFO  20:58:56,249 - #6 {
+INFO  20:58:56,250 - #10 print
+INFO  20:58:56,250 - #2 (
+INFO  20:58:56,250 - #37 2
+INFO  20:58:56,250 - #3 )
+INFO  20:58:56,250 - #17 ;
+INFO  20:58:56,250 - #7 }
+INFO  20:58:56,251 - #43 do
+INFO  20:58:56,251 - #6 {
+INFO  20:58:56,251 - #38 putp
+INFO  20:58:56,251 - #2 (
+INFO  20:58:56,252 - #37 0
+INFO  20:58:56,252 - #19 ,
+INFO  20:58:56,252 - #38 i
+INFO  20:58:56,252 - #3 )
+INFO  20:58:56,253 - #17 ;
+INFO  20:58:56,253 - #38 putn
+INFO  20:58:56,253 - #2 (
+INFO  20:58:56,254 - #37 0
+INFO  20:58:56,254 - #19 ,
+INFO  20:58:56,254 - #38 i
+INFO  20:58:56,254 - #3 )
+INFO  20:58:56,254 - #17 ;
+INFO  20:58:56,254 - #38 i
+INFO  20:58:56,254 - #27 ++
+INFO  20:58:56,254 - #17 ;
+INFO  20:58:56,254 - #7 }
+INFO  20:58:56,254 - #44 while
+INFO  20:58:56,255 - #2 (
+INFO  20:58:56,255 - #38 i
+INFO  20:58:56,255 - #33 <
+INFO  20:58:56,255 - #38 size
+INFO  20:58:56,255 - #3 )
+INFO  20:58:56,256 - #17 ;
+INFO  20:58:56,256 - #38 f
+INFO  20:58:56,256 - #2 (
+INFO  20:58:56,256 - #38 c
+INFO  20:58:56,256 - #19 ,
+INFO  20:58:56,256 - #38 x
+INFO  20:58:56,256 - #19 ,
+INFO  20:58:56,256 - #38 i
+INFO  20:58:56,256 - #3 )
+INFO  20:58:56,256 - #17 ;
+INFO  20:58:56,256 - #9 read
+INFO  20:58:56,256 - #2 (
+INFO  20:58:56,256 - #38 x
+INFO  20:58:56,257 - #3 )
+INFO  20:58:56,257 - #17 ;
+INFO  20:58:56,257 - #43 do
+INFO  20:58:56,257 - #6 {
+INFO  20:58:56,257 - #41 if
+INFO  20:58:56,257 - #2 (
+INFO  20:58:56,257 - #38 x
+INFO  20:58:56,257 - #34 <=
+INFO  20:58:56,257 - #37 0
+INFO  20:58:56,258 - #3 )
+INFO  20:58:56,258 - #11 break
+INFO  20:58:56,258 - #17 ;
+INFO  20:58:56,258 - #41 if
+INFO  20:58:56,258 - #2 (
+INFO  20:58:56,259 - #37 0
+INFO  20:58:56,259 - #34 <=
+INFO  20:58:56,259 - #38 x
+INFO  20:58:56,259 - #30 &&
+INFO  20:58:56,259 - #38 x
+INFO  20:58:56,259 - #33 <
+INFO  20:58:56,259 - #38 size
+INFO  20:58:56,259 - #3 )
+INFO  20:58:56,259 - #6 {
+INFO  20:58:56,259 - #38 putp
+INFO  20:58:56,260 - #2 (
+INFO  20:58:56,260 - #38 getp
+INFO  20:58:56,260 - #2 (
+INFO  20:58:56,260 - #38 x
+INFO  20:58:56,260 - #3 )
+INFO  20:58:56,261 - #23 +
+INFO  20:58:56,261 - #37 1
+INFO  20:58:56,262 - #3 )
+INFO  20:58:56,262 - #17 ;
+INFO  20:58:56,263 - #7 }
+INFO  20:58:56,263 - #42 else
+INFO  20:58:56,263 - #41 if
+INFO  20:58:56,263 - #2 (
+INFO  20:58:56,263 - #22 -
+INFO  20:58:56,263 - #38 size
+INFO  20:58:56,263 - #33 <
+INFO  20:58:56,263 - #38 x
+INFO  20:58:56,263 - #30 &&
+INFO  20:58:56,263 - #38 x
+INFO  20:58:56,263 - #33 <
+INFO  20:58:56,264 - #37 0
+INFO  20:58:56,264 - #3 )
+INFO  20:58:56,264 - #6 {
+INFO  20:58:56,264 - #38 putn
+INFO  20:58:56,264 - #2 (
+INFO  20:58:56,264 - #38 getn
+INFO  20:58:56,264 - #2 (
+INFO  20:58:56,264 - #22 -
+INFO  20:58:56,264 - #38 x
+INFO  20:58:56,264 - #3 )
+INFO  20:58:56,264 - #23 +
+INFO  20:58:56,264 - #37 1
+INFO  20:58:56,264 - #3 )
+INFO  20:58:56,264 - #17 ;
+INFO  20:58:56,264 - #7 }
+INFO  20:58:56,265 - #9 read
+INFO  20:58:56,265 - #2 (
+INFO  20:58:56,265 - #38 x
+INFO  20:58:56,265 - #3 )
+INFO  20:58:56,265 - #17 ;
+INFO  20:58:56,265 - #7 }
+INFO  20:58:56,265 - #44 while
+INFO  20:58:56,265 - #2 (
+INFO  20:58:56,265 - #39 true
+INFO  20:58:56,265 - #3 )
+INFO  20:58:56,265 - #17 ;
+INFO  20:58:56,266 - #10 print
+INFO  20:58:56,266 - #2 (
+INFO  20:58:56,266 - #38 x
+INFO  20:58:56,266 - #33 <
+INFO  20:58:56,266 - #37 0
+INFO  20:58:56,266 - #20 ?
+INFO  20:58:56,266 - #40 -
+INFO  20:58:56,266 - #18 :
+INFO  20:58:56,266 - #40 +
+INFO  20:58:56,266 - #3 )
+INFO  20:58:56,267 - #17 ;
+INFO  20:58:56,267 - #7 }
+INFO  20:58:56,267 - #7 }
+INFO  20:58:56,284 - Deklarisana konstanta size sa vrednoscu 10 na liniji 2
+INFO  20:58:56,284 - Deklarisana promenljiva pos na liniji 3
+INFO  20:58:56,285 - Deklarisana promenljiva neg na liniji 3
+INFO  20:58:56,285 - Obradjuje se funkcija putp na liniji 4
+ERROR 20:58:56,285 - Semanticka greska na liniji 5 : Ime idx nije deklarisano! 
+ERROR 20:58:56,285 - Semanticka greska na liniji 5 : Ime a nije deklarisano! 
+ERROR 20:58:56,285 - Greska na liniji 5 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  20:58:56,285 - Obradjuje se funkcija putn na liniji 7
+ERROR 20:58:56,286 - Semanticka greska na liniji 8 : Ime idx nije deklarisano! 
+ERROR 20:58:56,286 - Semanticka greska na liniji 8 : Ime a nije deklarisano! 
+ERROR 20:58:56,286 - Greska na liniji 8 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  20:58:56,286 - Obradjuje se funkcija getp na liniji 10
+ERROR 20:58:56,286 - Semanticka greska na liniji 11 : Ime idx nije deklarisano! 
+ERROR 20:58:56,286 - Greska na liniji 11 : tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije getp
+INFO  20:58:56,286 - Obradjuje se funkcija getn na liniji 13
+ERROR 20:58:56,286 - Semanticka greska na liniji 14 : Ime idx nije deklarisano! 
+ERROR 20:58:56,286 - Greska na liniji 14 : tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije getn
+INFO  20:58:56,286 - Obradjuje se funkcija f na liniji 16
+INFO  20:58:56,286 - Deklarisana promenljiva x na liniji 17
+ERROR 20:58:56,286 - Semanticka greska na liniji 18 : Ime arg nije deklarisano! 
+ERROR 20:58:56,287 - Greska na liniji 18 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  20:58:56,287 - Obradjuje se funkcija main na liniji 20
+INFO  20:58:56,287 - Deklarisana promenljiva x na liniji 20
+INFO  20:58:56,287 - Deklarisana promenljiva i na liniji 20
+INFO  20:58:56,287 - Deklarisana promenljiva c na liniji 21
+INFO  20:58:56,287 - Pronadjen poziv funkcije putp na liniji 31
+INFO  20:58:56,287 - Pronadjen poziv funkcije putn na liniji 32
+INFO  20:58:56,287 - Pronadjen poziv funkcije f na liniji 35
+INFO  20:58:56,287 - Pronadjen poziv funkcije getp na liniji 40
+INFO  20:58:56,287 - Pronadjen poziv funkcije putp na liniji 40
+INFO  20:58:56,287 - Pronadjen poziv funkcije getn na liniji 42
+INFO  20:58:56,288 - Pronadjen poziv funkcije putn na liniji 42
+INFO  20:58:56,288 - Print calls = 3
+ERROR 20:58:56,288 - Parsiranje NIJE uspesno zavrseno!

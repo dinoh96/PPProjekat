@@ -1,0 +1,152 @@
+INFO  00:16:11,985 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  00:16:12,046 - #8 program
+INFO  00:16:12,046 - #38 test302
+INFO  00:16:12,046 - #38 int
+INFO  00:16:12,047 - #38 i
+INFO  00:16:12,048 - #17 ;
+INFO  00:16:12,051 - #38 bool
+INFO  00:16:12,052 - #38 ibool
+INFO  00:16:12,053 - #17 ;
+INFO  00:16:12,053 - #38 int
+INFO  00:16:12,053 - #38 niz
+INFO  00:16:12,054 - #4 [
+INFO  00:16:12,054 - #5 ]
+INFO  00:16:12,055 - #17 ;
+INFO  00:16:12,056 - #6 {
+INFO  00:16:12,058 - #15 void
+INFO  00:16:12,059 - #38 main
+INFO  00:16:12,059 - #2 (
+INFO  00:16:12,060 - #3 )
+INFO  00:16:12,061 - #38 int
+INFO  00:16:12,061 - #38 a
+INFO  00:16:12,071 - #19 ,
+INFO  00:16:12,071 - #38 b
+INFO  00:16:12,072 - #19 ,
+INFO  00:16:12,072 - #38 c
+INFO  00:16:12,072 - #19 ,
+INFO  00:16:12,072 - #38 d
+INFO  00:16:12,073 - #19 ,
+INFO  00:16:12,074 - #38 e
+INFO  00:16:12,074 - #19 ,
+INFO  00:16:12,074 - #38 f
+INFO  00:16:12,074 - #17 ;
+INFO  00:16:12,075 - #6 {
+INFO  00:16:12,075 - #38 a
+INFO  00:16:12,076 - #21 =
+INFO  00:16:12,076 - #37 5
+INFO  00:16:12,077 - #17 ;
+INFO  00:16:12,082 - #38 b
+INFO  00:16:12,082 - #21 =
+INFO  00:16:12,083 - #37 7
+INFO  00:16:12,083 - #17 ;
+INFO  00:16:12,084 - #38 c
+INFO  00:16:12,084 - #21 =
+INFO  00:16:12,084 - #37 1
+INFO  00:16:12,085 - #17 ;
+INFO  00:16:12,085 - #38 d
+INFO  00:16:12,086 - #21 =
+INFO  00:16:12,086 - #37 7
+INFO  00:16:12,086 - #17 ;
+INFO  00:16:12,087 - #38 e
+INFO  00:16:12,087 - #21 =
+INFO  00:16:12,087 - #37 2
+INFO  00:16:12,088 - #17 ;
+INFO  00:16:12,088 - #38 f
+INFO  00:16:12,088 - #21 =
+INFO  00:16:12,089 - #37 6
+INFO  00:16:12,089 - #17 ;
+INFO  00:16:12,089 - #41 if
+INFO  00:16:12,090 - #2 (
+INFO  00:16:12,092 - #38 a
+INFO  00:16:12,092 - #35 >
+INFO  00:16:12,094 - #37 5
+INFO  00:16:12,096 - #30 &&
+INFO  00:16:12,097 - #38 b
+INFO  00:16:12,097 - #33 <
+INFO  00:16:12,097 - #37 7
+INFO  00:16:12,098 - #3 )
+INFO  00:16:12,102 - #6 {
+INFO  00:16:12,102 - #10 print
+INFO  00:16:12,102 - #2 (
+INFO  00:16:12,103 - #37 1
+INFO  00:16:12,103 - #3 )
+INFO  00:16:12,104 - #17 ;
+INFO  00:16:12,104 - #7 }
+INFO  00:16:12,104 - #42 else
+INFO  00:16:12,104 - #6 {
+INFO  00:16:12,105 - #41 if
+INFO  00:16:12,105 - #2 (
+INFO  00:16:12,105 - #38 c
+INFO  00:16:12,106 - #35 >
+INFO  00:16:12,106 - #37 1
+INFO  00:16:12,106 - #30 &&
+INFO  00:16:12,106 - #38 d
+INFO  00:16:12,106 - #35 >
+INFO  00:16:12,107 - #37 7
+INFO  00:16:12,108 - #3 )
+INFO  00:16:12,108 - #6 {
+INFO  00:16:12,108 - #10 print
+INFO  00:16:12,108 - #2 (
+INFO  00:16:12,108 - #37 2
+INFO  00:16:12,108 - #3 )
+INFO  00:16:12,109 - #17 ;
+INFO  00:16:12,109 - #7 }
+INFO  00:16:12,109 - #42 else
+INFO  00:16:12,109 - #6 {
+INFO  00:16:12,109 - #41 if
+INFO  00:16:12,110 - #2 (
+INFO  00:16:12,110 - #38 e
+INFO  00:16:12,110 - #33 <
+INFO  00:16:12,110 - #37 3
+INFO  00:16:12,110 - #30 &&
+INFO  00:16:12,116 - #38 f
+INFO  00:16:12,117 - #35 >
+INFO  00:16:12,117 - #37 5
+INFO  00:16:12,117 - #3 )
+INFO  00:16:12,117 - #6 {
+INFO  00:16:12,117 - #10 print
+INFO  00:16:12,117 - #2 (
+INFO  00:16:12,117 - #37 3
+INFO  00:16:12,117 - #3 )
+INFO  00:16:12,118 - #17 ;
+INFO  00:16:12,118 - #7 }
+INFO  00:16:12,118 - #42 else
+INFO  00:16:12,118 - #6 {
+INFO  00:16:12,118 - #10 print
+INFO  00:16:12,118 - #2 (
+INFO  00:16:12,118 - #37 0
+INFO  00:16:12,118 - #3 )
+INFO  00:16:12,118 - #17 ;
+INFO  00:16:12,118 - #7 }
+INFO  00:16:12,118 - #7 }
+INFO  00:16:12,119 - #7 }
+INFO  00:16:12,119 - #7 }
+ERROR 00:16:12,119 - 
+Sintaksna greska na liniji 38
+ERROR 00:16:12,120 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 38
+ERROR 00:16:12,126 - Semanticka greska na liniji 12 : Ime a nije deklarisano! 
+ERROR 00:16:12,126 - Greska na liniji 12 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 00:16:12,126 - Semanticka greska na liniji 13 : Ime b nije deklarisano! 
+ERROR 00:16:12,127 - Greska na liniji 13 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 00:16:12,128 - Semanticka greska na liniji 14 : Ime c nije deklarisano! 
+ERROR 00:16:12,128 - Greska na liniji 14 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 00:16:12,129 - Semanticka greska na liniji 15 : Ime d nije deklarisano! 
+ERROR 00:16:12,129 - Greska na liniji 15 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 00:16:12,129 - Semanticka greska na liniji 16 : Ime e nije deklarisano! 
+ERROR 00:16:12,129 - Greska na liniji 16 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 00:16:12,129 - Semanticka greska na liniji 17 : Ime f nije deklarisano! 
+ERROR 00:16:12,129 - Greska na liniji 17 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 00:16:12,129 - Semanticka greska na liniji 18 : Ime a nije deklarisano! 
+ERROR 00:16:12,129 - Semanticka greska na liniji 18 : Tipovi u operacionom clanu se moraju poklapati
+ERROR 00:16:12,129 - Semanticka greska na liniji 18 : Ime b nije deklarisano! 
+ERROR 00:16:12,129 - Semanticka greska na liniji 18 : Tipovi u operacionom clanu se moraju poklapati
+ERROR 00:16:12,129 - Semanticka greska na liniji 22 : Ime c nije deklarisano! 
+ERROR 00:16:12,130 - Semanticka greska na liniji 22 : Tipovi u operacionom clanu se moraju poklapati
+ERROR 00:16:12,130 - Semanticka greska na liniji 22 : Ime d nije deklarisano! 
+ERROR 00:16:12,130 - Semanticka greska na liniji 22 : Tipovi u operacionom clanu se moraju poklapati
+ERROR 00:16:12,130 - Semanticka greska na liniji 26 : Ime e nije deklarisano! 
+ERROR 00:16:12,130 - Semanticka greska na liniji 26 : Tipovi u operacionom clanu se moraju poklapati
+ERROR 00:16:12,130 - Semanticka greska na liniji 26 : Ime f nije deklarisano! 
+ERROR 00:16:12,130 - Semanticka greska na liniji 26 : Tipovi u operacionom clanu se moraju poklapati
+INFO  00:16:12,130 - Print calls = 4
+ERROR 00:16:12,131 - Parsiranje NIJE uspesno zavrseno!

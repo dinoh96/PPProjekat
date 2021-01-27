@@ -1,0 +1,39 @@
+INFO  19:12:25,023 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:12:25,064 - #8 program
+INFO  19:12:25,065 - #38 test301
+INFO  19:12:25,065 - #6 {
+INFO  19:12:25,066 - #15 void
+INFO  19:12:25,066 - #38 main
+INFO  19:12:25,066 - #2 (
+INFO  19:12:25,066 - #3 )
+INFO  19:12:25,067 - #38 int
+INFO  19:12:25,068 - #38 bodovi
+INFO  19:12:25,068 - #17 ;
+INFO  19:12:25,071 - #38 char
+INFO  19:12:25,071 - #38 c
+INFO  19:12:25,071 - #17 ;
+INFO  19:12:25,071 - #38 int
+INFO  19:12:25,071 - #38 a
+INFO  19:12:25,071 - #4 [
+INFO  19:12:25,071 - #5 ]
+INFO  19:12:25,071 - #17 ;
+INFO  19:12:25,072 - #6 {
+INFO  19:12:25,072 - #9 read
+INFO  19:12:25,075 - #2 (
+INFO  19:12:25,075 - #38 c
+INFO  19:12:25,075 - #3 )
+INFO  19:12:25,077 - #17 ;
+INFO  19:12:25,078 - #10 print
+INFO  19:12:25,078 - #2 (
+INFO  19:12:25,078 - #38 c
+INFO  19:12:25,078 - #3 )
+INFO  19:12:25,079 - #17 ;
+INFO  19:12:25,079 - #7 }
+INFO  19:12:25,080 - #7 }
+INFO  19:12:25,090 - Obradjuje se funkcija main na liniji 5
+INFO  19:12:25,090 - Deklarisana promenljiva bodovi na liniji 6
+INFO  19:12:25,090 - Deklarisana promenljiva c na liniji 7
+INFO  19:12:25,090 - Deklarisana promenljiva a na liniji 8
+INFO  19:12:25,090 - Print calls = 1
+INFO  19:12:25,092 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  19:12:25,095 - Parsiranje uspesno zavrseno!

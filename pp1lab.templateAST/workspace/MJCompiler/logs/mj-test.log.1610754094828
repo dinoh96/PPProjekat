@@ -1,0 +1,10 @@
+INFO  00:12:58,547 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  00:12:58,614 - #8 program
+INFO  00:12:58,615 - #37 MJProgram
+INFO  00:12:58,615 - #37 int
+INFO  00:12:58,617 - #16 ;
+ERROR 00:12:58,617 - 
+Sintaksna greska na liniji 2
+ERROR 00:12:58,617 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2
+INFO  00:12:58,643 - Print calls = 0
+ERROR 00:12:58,644 - Parsiranje NIJE uspesno zavrseno!

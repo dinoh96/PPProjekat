@@ -1,0 +1,34 @@
+// 
+
+program HelloWorld
+	int size;
+	char nizch[];
+{
+	void main()	
+		int i;
+	{
+		size = 12;
+		nizch = new char[size];
+		
+		nizch[0] = 'H';
+		nizch[1] = 'e';
+		nizch[2] = 'l';
+		nizch[3] = 'l';
+		nizch[4] = 'o';
+		nizch[5] = ' ';
+		nizch[6] = 'w';
+		nizch[7] = 'o';
+		nizch[8] = 'r';
+		nizch[9] = 'l';
+		nizch[10] = 'd';
+		nizch[11] = '!';
+		
+		i = 0;
+		do{
+			print(nizch[i]);
+			i++;
+		}while(i < size);
+	}
+}
+
+

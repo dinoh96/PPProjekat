@@ -1,0 +1,58 @@
+INFO  01:29:40,293 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  01:29:40,379 - #8 program
+INFO  01:29:40,379 - #38 test301
+INFO  01:29:40,379 - #6 {
+INFO  01:29:40,381 - #15 void
+INFO  01:29:40,381 - #38 main
+INFO  01:29:40,382 - #2 (
+INFO  01:29:40,382 - #3 )
+INFO  01:29:40,383 - #38 int
+INFO  01:29:40,384 - #38 bodovi
+INFO  01:29:40,385 - #17 ;
+INFO  01:29:40,387 - #38 char
+INFO  01:29:40,388 - #38 c
+INFO  01:29:40,389 - #17 ;
+INFO  01:29:40,389 - #38 int
+INFO  01:29:40,389 - #38 a
+INFO  01:29:40,389 - #4 [
+INFO  01:29:40,389 - #5 ]
+INFO  01:29:40,390 - #17 ;
+INFO  01:29:40,391 - #6 {
+INFO  01:29:40,391 - #38 a
+INFO  01:29:40,395 - #4 [
+INFO  01:29:40,395 - #37 0
+INFO  01:29:40,395 - #5 ]
+INFO  01:29:40,400 - #21 =
+INFO  01:29:40,402 - #37 2
+INFO  01:29:40,402 - #17 ;
+INFO  01:29:40,403 - #10 print
+INFO  01:29:40,403 - #2 (
+INFO  01:29:40,404 - #38 a
+INFO  01:29:40,404 - #4 [
+INFO  01:29:40,404 - #37 0
+INFO  01:29:40,404 - #5 ]
+INFO  01:29:40,404 - #3 )
+INFO  01:29:40,406 - #17 ;
+INFO  01:29:40,406 - #38 a
+INFO  01:29:40,406 - #4 [
+INFO  01:29:40,407 - #37 0
+INFO  01:29:40,407 - #5 ]
+INFO  01:29:40,407 - #27 ++
+INFO  01:29:40,407 - #17 ;
+INFO  01:29:40,407 - #10 print
+INFO  01:29:40,409 - #2 (
+INFO  01:29:40,409 - #38 a
+INFO  01:29:40,409 - #4 [
+INFO  01:29:40,409 - #37 0
+INFO  01:29:40,409 - #5 ]
+INFO  01:29:40,409 - #3 )
+INFO  01:29:40,409 - #17 ;
+INFO  01:29:40,411 - #7 }
+INFO  01:29:40,411 - #7 }
+INFO  01:29:40,426 - Obradjuje se funkcija main na liniji 5
+INFO  01:29:40,426 - Deklarisana promenljiva bodovi na liniji 6
+INFO  01:29:40,427 - Deklarisana promenljiva c na liniji 7
+INFO  01:29:40,427 - Deklarisana promenljiva a na liniji 8
+INFO  01:29:40,428 - Print calls = 2
+INFO  01:29:40,430 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  01:29:40,438 - Parsiranje uspesno zavrseno!

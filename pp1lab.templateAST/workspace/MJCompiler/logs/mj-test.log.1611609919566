@@ -1,0 +1,62 @@
+INFO  22:25:03,989 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:25:04,047 - #8 program
+INFO  22:25:04,048 - #38 HelloWorld
+INFO  22:25:04,048 - #38 int
+INFO  22:25:04,053 - #38 size
+INFO  22:25:04,054 - #17 ;
+INFO  22:25:04,056 - #38 int
+INFO  22:25:04,057 - #38 nizi
+INFO  22:25:04,057 - #4 [
+INFO  22:25:04,057 - #5 ]
+INFO  22:25:04,057 - #17 ;
+INFO  22:25:04,058 - #38 char
+INFO  22:25:04,058 - #38 nizch
+INFO  22:25:04,059 - #4 [
+INFO  22:25:04,059 - #5 ]
+INFO  22:25:04,059 - #17 ;
+INFO  22:25:04,059 - #6 {
+INFO  22:25:04,059 - #15 void
+INFO  22:25:04,060 - #38 main
+INFO  22:25:04,061 - #2 (
+INFO  22:25:04,061 - #3 )
+INFO  22:25:04,062 - #38 int
+INFO  22:25:04,063 - #38 i
+INFO  22:25:04,063 - #17 ;
+INFO  22:25:04,063 - #6 {
+INFO  22:25:04,063 - #38 size
+INFO  22:25:04,064 - #21 =
+INFO  22:25:04,064 - #37 12
+INFO  22:25:04,064 - #17 ;
+INFO  22:25:04,067 - #38 nizi
+INFO  22:25:04,067 - #21 =
+INFO  22:25:04,067 - #13 new
+INFO  22:25:04,067 - #38 int
+INFO  22:25:04,068 - #4 [
+INFO  22:25:04,068 - #38 size
+INFO  22:25:04,068 - #5 ]
+INFO  22:25:04,068 - #17 ;
+INFO  22:25:04,068 - #38 nizi
+INFO  22:25:04,068 - #4 [
+INFO  22:25:04,070 - #37 0
+INFO  22:25:04,070 - #5 ]
+INFO  22:25:04,070 - #21 =
+INFO  22:25:04,070 - #37 6
+INFO  22:25:04,070 - #17 ;
+INFO  22:25:04,071 - #10 print
+INFO  22:25:04,071 - #2 (
+INFO  22:25:04,071 - #38 nizi
+INFO  22:25:04,072 - #4 [
+INFO  22:25:04,072 - #37 0
+INFO  22:25:04,073 - #5 ]
+INFO  22:25:04,073 - #3 )
+INFO  22:25:04,074 - #17 ;
+INFO  22:25:04,074 - #7 }
+INFO  22:25:04,075 - #7 }
+INFO  22:25:04,084 - Deklarisana promenljiva size na liniji 4
+INFO  22:25:04,084 - Deklarisana promenljiva nizi na liniji 5
+INFO  22:25:04,084 - Deklarisana promenljiva nizch na liniji 6
+INFO  22:25:04,084 - Obradjuje se funkcija main na liniji 8
+INFO  22:25:04,085 - Deklarisana promenljiva i na liniji 9
+INFO  22:25:04,085 - Print calls = 1
+INFO  22:25:04,086 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  22:25:04,089 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,16 @@
+program MJProgram
+	int x; int y; const int z = 0; const char w = 'd'; boolean q; 
+{
+	int k () int c; {
+		c = 1 - 2;
+		return c+2;
+	}
+	
+	void main() {
+		y = 2;
+		x = y + 2;
+		y = k() + 3;
+		print(y);
+		q = (x == 4 ? true : false);
+	}
+}

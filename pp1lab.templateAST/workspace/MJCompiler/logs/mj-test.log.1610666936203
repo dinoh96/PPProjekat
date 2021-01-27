@@ -1,0 +1,75 @@
+INFO  23:09:15,441 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  23:09:15,515 - #8 program
+INFO  23:09:15,516 - #37 MJProgram
+INFO  23:09:15,516 - #37 int
+INFO  23:09:15,520 - #37 x
+INFO  23:09:15,522 - #16 ;
+INFO  23:09:15,523 - #37 int
+INFO  23:09:15,524 - #37 y
+INFO  23:09:15,525 - #16 ;
+INFO  23:09:15,525 - #6 {
+INFO  23:09:15,526 - #37 int
+INFO  23:09:15,529 - #37 k
+INFO  23:09:15,529 - #2 (
+INFO  23:09:15,531 - #3 )
+INFO  23:09:15,532 - #37 char
+INFO  23:09:15,532 - #37 c
+INFO  23:09:15,533 - #16 ;
+INFO  23:09:15,533 - #6 {
+INFO  23:09:15,533 - #37 c
+INFO  23:09:15,534 - #20 =
+INFO  23:09:15,537 - #36 1
+INFO  23:09:15,537 - #21 -
+INFO  23:09:15,541 - #36 2
+INFO  23:09:15,543 - #16 ;
+INFO  23:09:15,543 - #14 return
+INFO  23:09:15,544 - #37 c
+INFO  23:09:15,544 - #22 +
+INFO  23:09:15,544 - #36 2
+INFO  23:09:15,545 - #16 ;
+INFO  23:09:15,546 - #7 }
+INFO  23:09:15,546 - #37 int
+INFO  23:09:15,548 - #37 main
+INFO  23:09:15,549 - #2 (
+INFO  23:09:15,549 - #3 )
+INFO  23:09:15,549 - #6 {
+INFO  23:09:15,549 - #37 y
+INFO  23:09:15,549 - #20 =
+INFO  23:09:15,549 - #36 2
+INFO  23:09:15,550 - #16 ;
+INFO  23:09:15,550 - #37 x
+INFO  23:09:15,550 - #20 =
+INFO  23:09:15,551 - #37 y
+INFO  23:09:15,551 - #22 +
+INFO  23:09:15,552 - #36 2
+INFO  23:09:15,552 - #16 ;
+INFO  23:09:15,552 - #37 y
+INFO  23:09:15,552 - #20 =
+INFO  23:09:15,552 - #37 k
+INFO  23:09:15,552 - #2 (
+INFO  23:09:15,552 - #3 )
+INFO  23:09:15,555 - #22 +
+INFO  23:09:15,556 - #36 3
+INFO  23:09:15,556 - #16 ;
+INFO  23:09:15,556 - #10 print
+INFO  23:09:15,556 - #2 (
+INFO  23:09:15,556 - #37 y
+INFO  23:09:15,556 - #3 )
+INFO  23:09:15,560 - #16 ;
+INFO  23:09:15,560 - #14 return
+INFO  23:09:15,560 - #36 0
+INFO  23:09:15,560 - #16 ;
+INFO  23:09:15,560 - #7 }
+INFO  23:09:15,560 - #7 }
+INFO  23:09:15,570 - Deklarisana promenljiva x na liniji 2
+INFO  23:09:15,571 - Deklarisana promenljiva y na liniji 2
+INFO  23:09:15,571 - Obradjuje se funkcija k na liniji 5
+INFO  23:09:15,571 - Deklarisana promenljiva c na liniji 5
+ERROR 23:09:15,571 - Greska na liniji 6 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 23:09:15,572 - Greska na liniji 7 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 23:09:15,572 - Greska: PositiveExpr mora biti tipa Int na liniji 7
+ERROR 23:09:15,572 - Greska na liniji 7 : tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije k
+INFO  23:09:15,572 - Obradjuje se funkcija main na liniji 10
+INFO  23:09:15,572 - Pronadjen poziv funkcije k na liniji 13
+INFO  23:09:15,572 - Print calls = 1
+ERROR 23:09:15,573 - Parsiranje NIJE uspesno zavrseno!

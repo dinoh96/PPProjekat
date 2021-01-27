@@ -1,0 +1,20 @@
+INFO  22:09:07,149 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:09:07,206 - #8 program
+INFO  22:09:07,206 - #38 test302
+INFO  22:09:07,206 - #6 {
+INFO  22:09:07,208 - #15 void
+INFO  22:09:07,209 - #38 main
+INFO  22:09:07,209 - #2 (
+INFO  22:09:07,209 - #3 )
+INFO  22:09:07,210 - #6 {
+INFO  22:09:07,210 - #10 print
+INFO  22:09:07,211 - #2 (
+INFO  22:09:07,211 - #37 0
+INFO  22:09:07,211 - #3 )
+INFO  22:09:07,216 - #17 ;
+INFO  22:09:07,217 - #7 }
+INFO  22:09:07,217 - #7 }
+INFO  22:09:07,232 - Obradjuje se funkcija main na liniji 5
+INFO  22:09:07,232 - Print calls = 1
+INFO  22:09:07,233 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  22:09:07,237 - Parsiranje uspesno zavrseno!

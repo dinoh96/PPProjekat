@@ -1,0 +1,66 @@
+INFO  00:16:22,291 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  00:16:22,341 - #8 program
+INFO  00:16:22,341 - #38 test301
+INFO  00:16:22,341 - #16 const
+INFO  00:16:22,342 - #38 int
+INFO  00:16:22,342 - #38 nula
+INFO  00:16:22,344 - #21 =
+INFO  00:16:22,344 - #37 0
+INFO  00:16:22,344 - #17 ;
+INFO  00:16:22,345 - #16 const
+INFO  00:16:22,347 - #38 int
+INFO  00:16:22,347 - #38 jedan
+INFO  00:16:22,347 - #21 =
+INFO  00:16:22,347 - #37 1
+INFO  00:16:22,347 - #17 ;
+INFO  00:16:22,348 - #16 const
+INFO  00:16:22,348 - #38 int
+INFO  00:16:22,348 - #38 pet
+INFO  00:16:22,348 - #21 =
+INFO  00:16:22,348 - #37 5
+INFO  00:16:22,348 - #17 ;
+INFO  00:16:22,352 - #38 int
+INFO  00:16:22,352 - #38 niz
+INFO  00:16:22,352 - #4 [
+INFO  00:16:22,353 - #5 ]
+INFO  00:16:22,353 - #17 ;
+INFO  00:16:22,355 - #38 char
+INFO  00:16:22,356 - #38 nizch
+INFO  00:16:22,356 - #4 [
+INFO  00:16:22,356 - #5 ]
+INFO  00:16:22,356 - #17 ;
+INFO  00:16:22,356 - #6 {
+INFO  00:16:22,356 - #15 void
+INFO  00:16:22,357 - #38 main
+INFO  00:16:22,357 - #2 (
+INFO  00:16:22,357 - #3 )
+INFO  00:16:22,357 - #38 int
+INFO  00:16:22,358 - #38 bodovi
+INFO  00:16:22,358 - #17 ;
+INFO  00:16:22,359 - #38 bool
+INFO  00:16:22,359 - #38 bt
+INFO  00:16:22,359 - #17 ;
+INFO  00:16:22,359 - #6 {
+INFO  00:16:22,359 - #10 print
+INFO  00:16:22,360 - #2 (
+INFO  00:16:22,360 - #37 1
+INFO  00:16:22,360 - #3 )
+INFO  00:16:22,365 - #17 ;
+INFO  00:16:22,365 - #10 print
+INFO  00:16:22,366 - #2 (
+INFO  00:16:22,366 - #38 jedan
+INFO  00:16:22,367 - #3 )
+INFO  00:16:22,368 - #17 ;
+INFO  00:16:22,369 - #7 }
+INFO  00:16:22,369 - #7 }
+INFO  00:16:22,378 - Deklarisana konstanta nula sa vrednoscu 0 na liniji 5
+INFO  00:16:22,378 - Deklarisana konstanta jedan sa vrednoscu 1 na liniji 6
+INFO  00:16:22,379 - Deklarisana konstanta pet sa vrednoscu 5 na liniji 7
+INFO  00:16:22,379 - Deklarisana promenljiva niz na liniji 9
+INFO  00:16:22,379 - Deklarisana promenljiva nizch na liniji 10
+INFO  00:16:22,379 - Obradjuje se funkcija main na liniji 13
+INFO  00:16:22,380 - Deklarisana promenljiva bodovi na liniji 14
+INFO  00:16:22,380 - Deklarisana promenljiva bt na liniji 15
+INFO  00:16:22,380 - Print calls = 2
+INFO  00:16:22,381 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  00:16:22,384 - Parsiranje uspesno zavrseno!

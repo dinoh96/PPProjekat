@@ -1,0 +1,18 @@
+INFO  01:26:40,858 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  01:26:40,907 - #8 program
+INFO  01:26:40,907 - #38 p
+INFO  01:26:40,907 - #16 const
+INFO  01:26:40,908 - #38 int
+INFO  01:26:40,908 - #38 size
+INFO  01:26:40,909 - #21 =
+INFO  01:26:40,909 - #37 10
+INFO  01:26:40,909 - #17 ;
+INFO  01:26:40,911 - #38 bool
+INFO  01:26:40,912 - #38 isFinished
+INFO  01:26:40,912 - #21 =
+ERROR 01:26:40,912 - 
+Sintaksna greska na liniji 3
+ERROR 01:26:40,913 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3
+ERROR 01:26:40,920 - Nije pronadjen tip bool u tabeli simbola
+INFO  01:26:40,920 - Print calls = 0
+ERROR 01:26:40,920 - Parsiranje NIJE uspesno zavrseno!

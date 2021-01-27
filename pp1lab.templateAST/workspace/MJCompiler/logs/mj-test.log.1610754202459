@@ -1,0 +1,71 @@
+INFO  00:41:34,855 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  00:41:34,948 - #8 program
+INFO  00:41:34,948 - #37 MJProgram
+INFO  00:41:34,948 - #37 int
+INFO  00:41:34,949 - #37 x
+INFO  00:41:34,949 - #16 ;
+INFO  00:41:34,949 - #37 int
+INFO  00:41:34,950 - #37 y
+INFO  00:41:34,950 - #16 ;
+INFO  00:41:34,950 - #6 {
+INFO  00:41:34,951 - #37 int
+INFO  00:41:34,951 - #37 k
+INFO  00:41:34,951 - #2 (
+INFO  00:41:34,952 - #3 )
+INFO  00:41:34,952 - #37 int
+INFO  00:41:34,952 - #37 c
+INFO  00:41:34,952 - #16 ;
+INFO  00:41:34,952 - #6 {
+INFO  00:41:34,953 - #37 c
+INFO  00:41:34,954 - #20 =
+INFO  00:41:34,955 - #36 1
+INFO  00:41:34,955 - #21 -
+INFO  00:41:34,957 - #36 2
+INFO  00:41:34,958 - #16 ;
+INFO  00:41:34,958 - #14 return
+INFO  00:41:34,959 - #37 c
+INFO  00:41:34,959 - #22 +
+INFO  00:41:34,959 - #36 2
+INFO  00:41:34,959 - #16 ;
+INFO  00:41:34,960 - #7 }
+INFO  00:41:34,960 - #37 int
+INFO  00:41:34,960 - #37 main
+INFO  00:41:34,961 - #2 (
+INFO  00:41:34,961 - #3 )
+INFO  00:41:34,961 - #6 {
+INFO  00:41:34,961 - #37 y
+INFO  00:41:34,961 - #20 =
+INFO  00:41:34,961 - #36 2
+INFO  00:41:34,961 - #16 ;
+INFO  00:41:34,962 - #37 x
+INFO  00:41:34,962 - #20 =
+INFO  00:41:34,962 - #37 y
+INFO  00:41:34,962 - #22 +
+INFO  00:41:34,962 - #36 2
+INFO  00:41:34,962 - #16 ;
+INFO  00:41:34,962 - #37 y
+INFO  00:41:34,962 - #20 =
+INFO  00:41:34,962 - #37 k
+INFO  00:41:34,962 - #2 (
+INFO  00:41:34,963 - #3 )
+INFO  00:41:34,964 - #22 +
+INFO  00:41:34,964 - #36 3
+INFO  00:41:34,964 - #16 ;
+INFO  00:41:34,964 - #10 print
+INFO  00:41:34,964 - #2 (
+INFO  00:41:34,964 - #37 y
+INFO  00:41:34,964 - #3 )
+INFO  00:41:34,965 - #16 ;
+INFO  00:41:34,965 - #14 return
+INFO  00:41:34,965 - #36 0
+INFO  00:41:34,965 - #16 ;
+INFO  00:41:34,966 - #7 }
+INFO  00:41:34,966 - #7 }
+INFO  00:41:34,972 - Deklarisana promenljiva x na liniji 2
+INFO  00:41:34,972 - Deklarisana promenljiva y na liniji 2
+INFO  00:41:34,972 - Obradjuje se funkcija k na liniji 5
+INFO  00:41:34,972 - Deklarisana promenljiva c na liniji 5
+INFO  00:41:34,973 - Obradjuje se funkcija main na liniji 10
+INFO  00:41:34,973 - Pronadjen poziv funkcije k na liniji 13
+INFO  00:41:34,973 - Print calls = 1
+INFO  00:41:34,974 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj

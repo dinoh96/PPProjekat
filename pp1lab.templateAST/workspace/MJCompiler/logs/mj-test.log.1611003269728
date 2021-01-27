@@ -1,0 +1,54 @@
+INFO  21:50:31,067 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  21:50:31,111 - #8 program
+INFO  21:50:31,111 - #38 test302
+INFO  21:50:31,111 - #16 const
+INFO  21:50:31,113 - #38 int
+INFO  21:50:31,113 - #38 age
+INFO  21:50:31,113 - #21 =
+INFO  21:50:31,114 - #37 25
+INFO  21:50:31,114 - #17 ;
+INFO  21:50:31,115 - #38 int
+INFO  21:50:31,117 - #38 height
+INFO  21:50:31,117 - #19 ,
+INFO  21:50:31,119 - #38 weight
+INFO  21:50:31,120 - #17 ;
+INFO  21:50:31,121 - #6 {
+INFO  21:50:31,123 - #15 void
+INFO  21:50:31,126 - #38 main
+INFO  21:50:31,126 - #2 (
+INFO  21:50:31,127 - #3 )
+INFO  21:50:31,130 - #6 {
+INFO  21:50:31,132 - #38 height
+INFO  21:50:31,133 - #21 =
+INFO  21:50:31,134 - #37 180
+INFO  21:50:31,134 - #17 ;
+INFO  21:50:31,135 - #38 weight
+INFO  21:50:31,136 - #21 =
+INFO  21:50:31,136 - #37 100
+INFO  21:50:31,136 - #17 ;
+INFO  21:50:31,136 - #10 print
+INFO  21:50:31,136 - #2 (
+INFO  21:50:31,136 - #38 age
+INFO  21:50:31,136 - #3 )
+INFO  21:50:31,137 - #17 ;
+INFO  21:50:31,137 - #10 print
+INFO  21:50:31,137 - #2 (
+INFO  21:50:31,137 - #38 height
+INFO  21:50:31,137 - #3 )
+INFO  21:50:31,137 - #17 ;
+INFO  21:50:31,138 - #10 print
+INFO  21:50:31,138 - #2 (
+INFO  21:50:31,138 - #38 weight
+INFO  21:50:31,138 - #3 )
+INFO  21:50:31,138 - #17 ;
+INFO  21:50:31,138 - #14 return
+INFO  21:50:31,138 - #17 ;
+INFO  21:50:31,139 - #7 }
+INFO  21:50:31,139 - #7 }
+INFO  21:50:31,146 - Deklarisana konstanta age sa vrednoscu 25 na liniji 5
+INFO  21:50:31,147 - Deklarisana promenljiva height na liniji 6
+INFO  21:50:31,147 - Deklarisana promenljiva weight na liniji 6
+INFO  21:50:31,147 - Obradjuje se funkcija main na liniji 9
+INFO  21:50:31,148 - Print calls = 3
+INFO  21:50:31,148 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  21:50:31,150 - Parsiranje uspesno zavrseno!

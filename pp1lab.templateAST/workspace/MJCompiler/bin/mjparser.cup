@@ -1,0 +1,293 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+
+// import java.io.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+
+parser code {:
+	
+	boolean errorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+    
+    public void report_info(String message, Object info) {
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.info(msg.toString());
+    }
+    
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal LROUND, RROUND, LBOX, RBOX, LCURLY, RCURLY;
+terminal PROG, READ, PRINT, BREAK, CONTINUE, NEW, RETURN, VOID, CONST;
+terminal SEMI, COLON, COMMA, QMARK;
+terminal ASSIGN, MINUS, PLUS, MUL, DIV, MOD, INC, DEC, OR, AND;
+terminal EQ, NEQ, LT, LEQ, GT, GEQ;
+
+terminal Integer NUMBER;
+terminal String IDENT;
+terminal Boolean BOOL;
+terminal Character CHAR;
+terminal IF, ELSE, DO, WHILE; 
+
+nonterminal ActPars, Addop, CondTerm, Condition, DesignatorActPars, DesignatorStatement;
+nonterminal FactorActPars, FormPars, FormalParamDecl, FormalParamList, IfCondition, Matched, MethodDeclList, Mulop, PrintAddition;
+nonterminal Relop, ReturnExpr, Statement, StatementList, Unmatched, VarDecl, ConstDecl;
+nonterminal MulopFactor, OrCondTerm, AndCondFact, ActParsList, ListOfVariables, ListOfConstants;
+nonterminal ArrayVarNode, DoKeyWord, IfKeyWord, WhileKeyWord, ElseKeyWord, QMark, Colon;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, DesignatorArrayName, MethodDecl, MethodTypeName; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, GlobalVarDeclList, VarOrConstDeclList, VarDeclList, Expression, NonTernaryExpression, TernaryExpression; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct CondFact, ConstNode, VarNode;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ConstantVars;
+
+
+Program ::= (Program) PROG ProgName:p GlobalVarDeclList LCURLY MethodDeclList RCURLY 
+;
+
+ProgName ::= (ProgName) IDENT:pName 
+;
+
+GlobalVarDeclList ::= (GlobalVarDeclarationList) GlobalVarDeclList VarOrConstDeclList
+						| (NoGlobalVarDeclarationList) /* epsilon */
+						;
+
+VarOrConstDeclList ::= (VariablesDeclarationList) VarDecl
+						| (ConstDeclarationList) ConstDecl
+						;
+
+VarDeclList ::= (VarDeclarations) VarDeclList VarDecl  
+				|
+				(NoVarDeclarations) /* epsilon */ 
+				;
+				
+ConstDecl ::= (ConstDecl) CONST Type ListOfConstants SEMI
+;
+			
+VarDecl ::= (VarDecl) Type ListOfVariables SEMI 
+;
+
+ListOfConstants ::= (MultipleConstants) ListOfConstants COMMA ConstNode
+					| (SingleConstant) ConstNode
+					;
+					
+ConstNode ::= (ConstNode) IDENT:constName ASSIGN ConstantVars
+;
+
+ListOfVariables ::= (MultipleVariables) ListOfVariables COMMA VarNode
+					| (SingleVariable) VarNode
+					;
+
+VarNode ::= (VarNode) IDENT:varName ArrayVarNode
+;
+
+ArrayVarNode ::= (ArrayDecl) LBOX RBOX
+					| (NoArrayDecl) /* epsilon */
+;
+
+Type ::= (Type) IDENT:typeName 
+;
+
+MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
+					|
+					(NoMethodDecl)/* epsilon */
+					;
+
+MethodDecl ::= (MethodDecl) MethodTypeName LROUND FormPars RROUND VarDeclList LCURLY StatementList RCURLY 
+			   ;
+
+MethodTypeName ::= (NonVoidMethodTypeName) Type:retType IDENT:methName
+					| (VoidMethodTypeName) VOID IDENT:methName
+					;
+
+FormPars ::= (FormParams) FormalParamList 
+				| (NoFormParam) /* epsilon */ 
+				;
+
+FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
+					| (SingleFormalParamDecl) FormalParamDecl
+					;
+					
+FormalParamDecl ::= (FormalParamDecl) Type IDENT:name ArrayVarNode
+;
+
+StatementList ::= (Statements) StatementList Statement 
+					| (NoStmt) /* epsilon */
+				 	;
+
+Statement ::= (MatchedStmt) Matched 
+				| (UnmachedStmt) Unmatched 
+				;
+
+IfKeyWord ::= (IfKeyWord) IF;
+
+ElseKeyWord ::= (ElseKeyWord) ELSE;
+
+DoKeyWord ::= (DoKeyWord) DO;
+
+WhileKeyWord ::= (WhileKeyWord) WHILE;
+
+Unmatched ::= (UnmatchedIf) IfKeyWord IfCondition Statement 
+				| (UnmatchedIfElse) IfKeyWord IfCondition Matched ElseKeyWord Unmatched
+				;
+
+IfCondition ::= (IfCondition) LROUND Condition RROUND
+;
+				  
+Matched ::= (DesignatorStmt) DesignatorStatement:dest SEMI 
+			| (ReadStmt) READ LROUND Designator RROUND SEMI
+			| (PrintStmt) PRINT LROUND Expr PrintAddition RROUND SEMI 
+			| (ReturnStmt) RETURN ReturnExpr:t SEMI
+			| (BreakStmt) BREAK SEMI
+			| (ContinueStmt) CONTINUE SEMI
+			| (MatchedIf) IfKeyWord IfCondition Matched ElseKeyWord Matched
+			| (DoWhile) DoKeyWord Statement WhileKeyWord LROUND Condition RROUND SEMI
+			| (ErrorStmt)error SEMI:l
+			{: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}
+			| (BlockStatement) LCURLY StatementList RCURLY
+			;
+
+ReturnExpr ::= (YesReturnExpr) Expr
+				| (NoReturnExpr) /* epsilon */
+				;
+				
+PrintAddition ::= (YesPrintAddition) COMMA NUMBER
+					| (NoPrintAddition) /* epsilon */
+					;
+					
+Designator ::= (DesignatorNonArray) IDENT:name
+				| (DesignatorArray) DesignatorArrayName LBOX Expr RBOX
+				;
+
+DesignatorArrayName ::= (DesignatorArrayName) IDENT:name;
+
+
+Addop ::= (Addition) PLUS 
+			| (Subtraction) MINUS
+			;
+			
+Mulop ::= (Multiplication) MUL
+			| (Division) DIV
+			| (Modulus) MOD
+			;
+
+Relop ::= (Equals) EQ
+			| (NotEquals) NEQ
+			| (LesserThan) LT
+			| (LesserEqual) LEQ
+			| (GreaterThan) GT
+			| (GreaterEqual) GEQ
+			;
+
+DesignatorStatement ::= (DesignatorAssignment) Designator ASSIGN Expr
+						| (DesignatorIncrement) Designator INC
+						| (DesignatorDecrement) Designator DEC
+						| (ProcCall) Designator LROUND DesignatorActPars RROUND
+						;
+
+DesignatorActPars ::= (YesDesignatorActPars) ActPars
+						| (NoDesignatorActPars) /* epsilon */
+						;									
+
+Expr ::= (NonTernaryExpr) NonTernaryExpression
+			| (TernaryExpr) TernaryExpression
+			;
+			
+TernaryExpression ::= (TernaryExpression) Condition:cond QMark Expr:e1 Colon Expr:e2
+;
+
+QMark ::= (QMark) QMARK;
+
+Colon ::= (Colon) COLON;
+
+NonTernaryExpression ::= (NegativeExpr) MINUS Expression
+							| (PositiveExpr) Expression
+;
+
+Expression ::= (AddExpr) Expression:te Addop Term:t
+				| (TermExpr) Term:T
+				; 
+
+Factor ::= (Variable) Designator:d
+			| (ConstFactors) ConstantVars
+			| (ExpressionVar) LROUND Expr RROUND
+			| (NewObjectVar) NEW Type LBOX Expr RBOX
+			| (FuncCall) Designator:func LROUND FactorActPars RROUND
+			;
+
+ConstantVars ::= (IntVar) NUMBER:value
+					| (CharVar) CHAR:value
+					| (BoolVar) BOOL:value
+					;
+
+FactorActPars ::= (YesFactorActPars) ActPars 
+					| (NoFactorActPars) /* epsilon */
+					;
+
+ActPars ::= (ExprWithActPars) Expr ActParsList
+;
+
+ActParsList ::= (YesActParsList) COMMA Expr ActParsList
+				| (NoActParsList) /* epsilon */
+				;
+
+Term ::= (Term) Factor MulopFactor
+;				
+
+MulopFactor ::= (YesMulopFactor) Mulop Factor MulopFactor
+				| (NoMulopFactor) /* epsilon */
+				;
+Condition ::= (Condition) CondTerm OrCondTerm
+;
+
+OrCondTerm ::= (YesOrCondTerm) OR CondTerm OrCondTerm
+				| (NoOrCondTerm) /* epsilon */
+				;
+
+CondTerm ::= (CondTerm) CondFact AndCondFact
+;
+
+AndCondFact ::= (YesAndCondFact) AND CondFact AndCondFact
+				| (NoAndCondFact) /* epsilon */
+				;
+				
+CondFact ::= (MultiCondFact) NonTernaryExpression Relop NonTernaryExpression
+				| (SingleCondFact) NonTernaryExpression
+;
+							

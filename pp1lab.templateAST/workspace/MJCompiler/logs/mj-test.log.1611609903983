@@ -1,0 +1,83 @@
+INFO  21:49:37,272 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  21:49:37,484 - #8 program
+INFO  21:49:37,487 - #38 HelloWorld
+INFO  21:49:37,488 - #38 int
+INFO  21:49:37,491 - #38 size
+INFO  21:49:37,493 - #17 ;
+INFO  21:49:37,505 - #38 int
+INFO  21:49:37,507 - #38 nizi
+INFO  21:49:37,508 - #4 [
+INFO  21:49:37,508 - #5 ]
+INFO  21:49:37,508 - #17 ;
+INFO  21:49:37,510 - #38 char
+INFO  21:49:37,510 - #38 nizch
+INFO  21:49:37,510 - #4 [
+INFO  21:49:37,511 - #5 ]
+INFO  21:49:37,511 - #17 ;
+INFO  21:49:37,511 - #6 {
+INFO  21:49:37,511 - #15 void
+INFO  21:49:37,513 - #38 main
+INFO  21:49:37,514 - #2 (
+INFO  21:49:37,515 - #3 )
+INFO  21:49:37,521 - #38 int
+INFO  21:49:37,523 - #38 i
+INFO  21:49:37,523 - #17 ;
+INFO  21:49:37,523 - #6 {
+INFO  21:49:37,523 - #38 size
+INFO  21:49:37,524 - #21 =
+INFO  21:49:37,525 - #37 12
+INFO  21:49:37,525 - #17 ;
+INFO  21:49:37,528 - #38 nizi
+INFO  21:49:37,528 - #21 =
+INFO  21:49:37,528 - #13 new
+INFO  21:49:37,529 - #38 int
+INFO  21:49:37,529 - #4 [
+INFO  21:49:37,529 - #38 size
+INFO  21:49:37,529 - #5 ]
+INFO  21:49:37,529 - #17 ;
+INFO  21:49:37,529 - #38 nizi
+INFO  21:49:37,529 - #4 [
+INFO  21:49:37,531 - #37 0
+INFO  21:49:37,531 - #5 ]
+INFO  21:49:37,531 - #21 =
+INFO  21:49:37,531 - #37 6
+INFO  21:49:37,532 - #17 ;
+INFO  21:49:37,532 - #10 print
+INFO  21:49:37,532 - #2 (
+INFO  21:49:37,532 - #38 nizi
+INFO  21:49:37,533 - #4 [
+INFO  21:49:37,533 - #37 0
+INFO  21:49:37,533 - #5 ]
+INFO  21:49:37,533 - #3 )
+INFO  21:49:37,535 - #17 ;
+INFO  21:49:37,535 - #10 print
+INFO  21:49:37,536 - #2 (
+INFO  21:49:37,537 - #38 nizi
+INFO  21:49:37,537 - #4 [
+INFO  21:49:37,539 - #37 0
+INFO  21:49:37,539 - #5 ]
+INFO  21:49:37,540 - #3 )
+INFO  21:49:37,540 - #17 ;
+INFO  21:49:37,542 - #38 nizi
+INFO  21:49:37,542 - #4 [
+INFO  21:49:37,543 - #37 0
+INFO  21:49:37,546 - #5 ]
+INFO  21:49:37,548 - #28 --
+INFO  21:49:37,549 - #17 ;
+INFO  21:49:37,549 - #10 print
+INFO  21:49:37,549 - #2 (
+INFO  21:49:37,549 - #38 nizi
+INFO  21:49:37,549 - #4 [
+INFO  21:49:37,550 - #37 0
+INFO  21:49:37,550 - #5 ]
+INFO  21:49:37,550 - #3 )
+INFO  21:49:37,551 - #17 ;
+INFO  21:49:37,551 - #7 }
+INFO  21:49:37,551 - #7 }
+INFO  21:49:37,598 - Deklarisana promenljiva size na liniji 4
+INFO  21:49:37,598 - Deklarisana promenljiva nizi na liniji 5
+INFO  21:49:37,598 - Deklarisana promenljiva nizch na liniji 6
+INFO  21:49:37,598 - Obradjuje se funkcija main na liniji 8
+INFO  21:49:37,598 - Deklarisana promenljiva i na liniji 9
+INFO  21:49:37,599 - Print calls = 3
+INFO  21:49:37,600 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj

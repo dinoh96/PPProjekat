@@ -1,0 +1,27 @@
+INFO  00:51:28,018 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  00:51:28,141 - #8 program
+INFO  00:51:28,141 - #38 test301
+INFO  00:51:28,142 - #6 {
+INFO  00:51:28,143 - #15 void
+INFO  00:51:28,144 - #38 main
+INFO  00:51:28,144 - #2 (
+INFO  00:51:28,144 - #3 )
+INFO  00:51:28,145 - #38 int
+INFO  00:51:28,145 - #38 bodovi
+INFO  00:51:28,146 - #17 ;
+INFO  00:51:28,148 - #6 {
+INFO  00:51:28,149 - #38 bodovi
+INFO  00:51:28,150 - #21 =
+INFO  00:51:28,151 - #37 2
+INFO  00:51:28,151 - #17 ;
+INFO  00:51:28,153 - #10 print
+INFO  00:51:28,154 - #2 (
+INFO  00:51:28,154 - #38 bodovi
+INFO  00:51:28,154 - #3 )
+INFO  00:51:28,155 - #17 ;
+INFO  00:51:28,155 - #7 }
+INFO  00:51:28,156 - #7 }
+INFO  00:51:28,177 - Obradjuje se funkcija main na liniji 5
+INFO  00:51:28,178 - Deklarisana promenljiva bodovi na liniji 6
+INFO  00:51:28,179 - Print calls = 1
+INFO  00:51:28,179 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj

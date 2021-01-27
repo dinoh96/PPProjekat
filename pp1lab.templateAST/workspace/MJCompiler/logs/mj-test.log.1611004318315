@@ -1,0 +1,16 @@
+INFO  22:11:24,234 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:11:24,278 - #8 program
+INFO  22:11:24,278 - #38 test302
+INFO  22:11:24,279 - #6 {
+INFO  22:11:24,280 - #15 void
+INFO  22:11:24,281 - #38 main
+INFO  22:11:24,281 - #2 (
+INFO  22:11:24,281 - #3 )
+INFO  22:11:24,281 - #6 {
+INFO  22:11:24,282 - #10 print
+INFO  22:11:24,282 - #2 (
+INFO  22:11:24,283 - #37 0
+INFO  22:11:24,283 - #3 )
+INFO  22:11:24,286 - #17 ;
+INFO  22:11:24,286 - #7 }
+INFO  22:11:24,286 - #7 }

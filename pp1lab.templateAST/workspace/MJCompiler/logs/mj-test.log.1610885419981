@@ -1,0 +1,36 @@
+INFO  13:09:40,525 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  13:09:40,576 - #8 program
+INFO  13:09:40,577 - #38 p
+INFO  13:09:40,577 - #16 const
+INFO  13:09:40,578 - #38 int
+INFO  13:09:40,578 - #38 size
+INFO  13:09:40,578 - #21 =
+INFO  13:09:40,579 - #37 10
+INFO  13:09:40,579 - #17 ;
+INFO  13:09:40,579 - #38 int
+INFO  13:09:40,581 - #38 pos
+INFO  13:09:40,581 - #4 [
+INFO  13:09:40,581 - #5 ]
+INFO  13:09:40,581 - #19 ,
+INFO  13:09:40,583 - #38 neg
+INFO  13:09:40,583 - #4 [
+INFO  13:09:40,583 - #5 ]
+INFO  13:09:40,584 - #17 ;
+INFO  13:09:40,584 - #6 {
+INFO  13:09:40,585 - #15 void
+INFO  13:09:40,586 - #38 putp
+INFO  13:09:40,594 - #2 (
+INFO  13:09:40,594 - #38 int
+INFO  13:09:40,594 - #38 a
+INFO  13:09:40,594 - #19 ,
+INFO  13:09:40,595 - #38 int
+INFO  13:09:40,595 - #38 idx
+INFO  13:09:40,595 - #3 )
+INFO  13:09:40,596 - #6 {
+INFO  13:09:40,597 - #38 this
+INFO  13:09:40,597 - #38 pos
+ERROR 13:09:40,597 - 
+Sintaksna greska na liniji 5
+ERROR 13:09:40,598 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5
+INFO  13:09:40,603 - Print calls = 0
+ERROR 13:09:40,604 - Parsiranje NIJE uspesno zavrseno!

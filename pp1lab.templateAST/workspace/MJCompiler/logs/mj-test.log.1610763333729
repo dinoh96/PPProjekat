@@ -1,0 +1,99 @@
+INFO  03:14:57,192 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  03:14:57,251 - #8 program
+INFO  03:14:57,251 - #38 MJProgram
+INFO  03:14:57,251 - #38 int
+INFO  03:14:57,252 - #38 x
+INFO  03:14:57,253 - #17 ;
+INFO  03:14:57,254 - #38 int
+INFO  03:14:57,255 - #38 y
+INFO  03:14:57,255 - #17 ;
+INFO  03:14:57,256 - #16 const
+INFO  03:14:57,256 - #38 int
+INFO  03:14:57,256 - #38 z
+INFO  03:14:57,256 - #21 =
+INFO  03:14:57,256 - #37 0
+INFO  03:14:57,256 - #17 ;
+INFO  03:14:57,257 - #16 const
+INFO  03:14:57,258 - #38 char
+INFO  03:14:57,258 - #38 w
+INFO  03:14:57,258 - #21 =
+INFO  03:14:57,258 - #40 d
+INFO  03:14:57,259 - #17 ;
+INFO  03:14:57,261 - #38 boolean
+INFO  03:14:57,261 - #38 q
+INFO  03:14:57,261 - #17 ;
+INFO  03:14:57,261 - #6 {
+INFO  03:14:57,261 - #38 int
+INFO  03:14:57,262 - #38 k
+INFO  03:14:57,263 - #2 (
+INFO  03:14:57,263 - #3 )
+INFO  03:14:57,265 - #38 int
+INFO  03:14:57,267 - #38 c
+INFO  03:14:57,267 - #17 ;
+INFO  03:14:57,267 - #6 {
+INFO  03:14:57,268 - #38 c
+INFO  03:14:57,270 - #21 =
+INFO  03:14:57,272 - #37 1
+INFO  03:14:57,272 - #22 -
+INFO  03:14:57,274 - #37 2
+INFO  03:14:57,276 - #17 ;
+INFO  03:14:57,277 - #14 return
+INFO  03:14:57,278 - #38 c
+INFO  03:14:57,278 - #23 +
+INFO  03:14:57,278 - #37 2
+INFO  03:14:57,279 - #17 ;
+INFO  03:14:57,279 - #7 }
+INFO  03:14:57,280 - #38 int
+INFO  03:14:57,281 - #38 main
+INFO  03:14:57,281 - #2 (
+INFO  03:14:57,281 - #3 )
+INFO  03:14:57,281 - #6 {
+INFO  03:14:57,281 - #38 y
+INFO  03:14:57,281 - #21 =
+INFO  03:14:57,281 - #37 2
+INFO  03:14:57,281 - #17 ;
+INFO  03:14:57,282 - #38 x
+INFO  03:14:57,282 - #21 =
+INFO  03:14:57,282 - #38 y
+INFO  03:14:57,282 - #23 +
+INFO  03:14:57,282 - #37 2
+INFO  03:14:57,282 - #17 ;
+INFO  03:14:57,282 - #38 y
+INFO  03:14:57,282 - #21 =
+INFO  03:14:57,282 - #38 k
+INFO  03:14:57,282 - #2 (
+INFO  03:14:57,283 - #3 )
+INFO  03:14:57,283 - #23 +
+INFO  03:14:57,284 - #37 3
+INFO  03:14:57,284 - #17 ;
+INFO  03:14:57,284 - #10 print
+INFO  03:14:57,284 - #2 (
+INFO  03:14:57,284 - #38 y
+INFO  03:14:57,284 - #3 )
+INFO  03:14:57,284 - #17 ;
+INFO  03:14:57,285 - #38 q
+INFO  03:14:57,285 - #21 =
+INFO  03:14:57,285 - #2 (
+INFO  03:14:57,285 - #38 x
+INFO  03:14:57,285 - #31 ==
+INFO  03:14:57,285 - #37 4
+INFO  03:14:57,286 - #20 ?
+INFO  03:14:57,288 - #39 true
+INFO  03:14:57,289 - #18 :
+INFO  03:14:57,289 - #39 false
+INFO  03:14:57,289 - #3 )
+INFO  03:14:57,289 - #17 ;
+INFO  03:14:57,290 - #14 return
+INFO  03:14:57,290 - #37 0
+INFO  03:14:57,290 - #17 ;
+INFO  03:14:57,290 - #7 }
+INFO  03:14:57,290 - #7 }
+INFO  03:14:57,297 - Deklarisana promenljiva x na liniji 2
+INFO  03:14:57,297 - Deklarisana promenljiva y na liniji 2
+INFO  03:14:57,298 - Deklarisana konstanta z sa vrednoscu 0 na liniji 2
+INFO  03:14:57,298 - Deklarisana konstanta w sa vrednoscu d na liniji 2
+INFO  03:14:57,298 - Deklarisana promenljiva q na liniji 2
+INFO  03:14:57,298 - Obradjuje se funkcija k na liniji 4
+INFO  03:14:57,298 - Deklarisana promenljiva c na liniji 4
+INFO  03:14:57,299 - Obradjuje se funkcija main na liniji 9
+INFO  03:14:57,299 - Pronadjen poziv funkcije k na liniji 12

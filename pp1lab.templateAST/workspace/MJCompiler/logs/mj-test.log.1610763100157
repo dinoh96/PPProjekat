@@ -1,0 +1,96 @@
+INFO  03:10:52,237 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  03:10:52,288 - #8 program
+INFO  03:10:52,288 - #38 MJProgram
+INFO  03:10:52,288 - #38 int
+INFO  03:10:52,289 - #38 x
+INFO  03:10:52,290 - #17 ;
+INFO  03:10:52,290 - #38 int
+INFO  03:10:52,291 - #38 y
+INFO  03:10:52,291 - #17 ;
+INFO  03:10:52,291 - #16 const
+INFO  03:10:52,291 - #38 int
+INFO  03:10:52,292 - #38 z
+INFO  03:10:52,292 - #21 =
+INFO  03:10:52,292 - #37 0
+INFO  03:10:52,292 - #17 ;
+INFO  03:10:52,293 - #16 const
+INFO  03:10:52,294 - #38 char
+INFO  03:10:52,294 - #38 w
+INFO  03:10:52,294 - #21 =
+INFO  03:10:52,294 - #40 d
+INFO  03:10:52,295 - #17 ;
+INFO  03:10:52,297 - #38 boolean
+INFO  03:10:52,297 - #38 q
+INFO  03:10:52,297 - #17 ;
+INFO  03:10:52,297 - #6 {
+INFO  03:10:52,297 - #38 int
+INFO  03:10:52,298 - #38 k
+INFO  03:10:52,298 - #2 (
+INFO  03:10:52,299 - #3 )
+INFO  03:10:52,299 - #38 int
+INFO  03:10:52,300 - #38 c
+INFO  03:10:52,300 - #17 ;
+INFO  03:10:52,300 - #6 {
+INFO  03:10:52,301 - #38 c
+INFO  03:10:52,302 - #21 =
+INFO  03:10:52,306 - #37 1
+INFO  03:10:52,306 - #22 -
+INFO  03:10:52,308 - #37 2
+INFO  03:10:52,309 - #17 ;
+INFO  03:10:52,309 - #14 return
+INFO  03:10:52,310 - #38 c
+INFO  03:10:52,310 - #23 +
+INFO  03:10:52,310 - #37 2
+INFO  03:10:52,311 - #17 ;
+INFO  03:10:52,311 - #7 }
+INFO  03:10:52,311 - #38 int
+INFO  03:10:52,312 - #38 main
+INFO  03:10:52,313 - #2 (
+INFO  03:10:52,313 - #3 )
+INFO  03:10:52,313 - #6 {
+INFO  03:10:52,313 - #38 y
+INFO  03:10:52,313 - #21 =
+INFO  03:10:52,314 - #37 2
+INFO  03:10:52,314 - #17 ;
+INFO  03:10:52,314 - #38 x
+INFO  03:10:52,314 - #21 =
+INFO  03:10:52,314 - #38 y
+INFO  03:10:52,314 - #23 +
+INFO  03:10:52,315 - #37 2
+INFO  03:10:52,315 - #17 ;
+INFO  03:10:52,315 - #38 y
+INFO  03:10:52,315 - #21 =
+INFO  03:10:52,315 - #38 k
+INFO  03:10:52,315 - #2 (
+INFO  03:10:52,316 - #3 )
+INFO  03:10:52,316 - #23 +
+INFO  03:10:52,317 - #37 3
+INFO  03:10:52,317 - #17 ;
+INFO  03:10:52,317 - #10 print
+INFO  03:10:52,317 - #2 (
+INFO  03:10:52,317 - #38 y
+INFO  03:10:52,317 - #3 )
+INFO  03:10:52,318 - #17 ;
+INFO  03:10:52,318 - #38 q
+INFO  03:10:52,318 - #21 =
+INFO  03:10:52,318 - #38 true
+INFO  03:10:52,318 - #17 ;
+INFO  03:10:52,318 - #14 return
+INFO  03:10:52,320 - #37 0
+INFO  03:10:52,320 - #17 ;
+INFO  03:10:52,320 - #7 }
+INFO  03:10:52,320 - #7 }
+INFO  03:10:52,329 - Deklarisana promenljiva x na liniji 2
+INFO  03:10:52,329 - Deklarisana promenljiva y na liniji 2
+INFO  03:10:52,329 - Deklarisana konstanta z sa vrednoscu 0 na liniji 2
+INFO  03:10:52,329 - Deklarisana konstanta w sa vrednoscu d na liniji 2
+INFO  03:10:52,329 - Deklarisana promenljiva q na liniji 2
+INFO  03:10:52,329 - Obradjuje se funkcija k na liniji 4
+INFO  03:10:52,329 - Deklarisana promenljiva c na liniji 4
+INFO  03:10:52,329 - Obradjuje se funkcija main na liniji 9
+INFO  03:10:52,329 - Pronadjen poziv funkcije k na liniji 12
+ERROR 03:10:52,329 - Semanticka greska na liniji 14 : Ime true nije deklarisano! 
+ERROR 03:10:52,329 - Semanticka greska na liniji 14 : PositiveExpr mora biti tipa Int
+ERROR 03:10:52,329 - Greska na liniji 14 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  03:10:52,329 - Print calls = 1
+ERROR 03:10:52,330 - Parsiranje NIJE uspesno zavrseno!

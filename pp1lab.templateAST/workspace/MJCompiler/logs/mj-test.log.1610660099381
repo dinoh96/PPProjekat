@@ -1,0 +1,70 @@
+INFO  19:44:03,714 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:44:03,754 - #8 program
+INFO  19:44:03,755 - #37 MJProgram
+INFO  19:44:03,755 - #37 int
+INFO  19:44:03,756 - #37 x
+INFO  19:44:03,757 - #16 ;
+INFO  19:44:03,757 - #37 int
+INFO  19:44:03,758 - #37 y
+INFO  19:44:03,758 - #16 ;
+INFO  19:44:03,758 - #6 {
+INFO  19:44:03,758 - #37 int
+INFO  19:44:03,759 - #37 k
+INFO  19:44:03,759 - #2 (
+INFO  19:44:03,760 - #3 )
+INFO  19:44:03,761 - #37 int
+INFO  19:44:03,761 - #37 c
+INFO  19:44:03,761 - #16 ;
+INFO  19:44:03,761 - #6 {
+INFO  19:44:03,761 - #37 c
+INFO  19:44:03,762 - #20 =
+INFO  19:44:03,763 - #36 1
+INFO  19:44:03,764 - #16 ;
+INFO  19:44:03,768 - #14 return
+INFO  19:44:03,768 - #37 c
+INFO  19:44:03,768 - #22 +
+INFO  19:44:03,768 - #36 2
+INFO  19:44:03,769 - #16 ;
+INFO  19:44:03,769 - #7 }
+INFO  19:44:03,769 - #37 int
+INFO  19:44:03,770 - #37 main
+INFO  19:44:03,771 - #2 (
+INFO  19:44:03,771 - #3 )
+INFO  19:44:03,771 - #6 {
+INFO  19:44:03,771 - #37 y
+INFO  19:44:03,771 - #20 =
+INFO  19:44:03,771 - #36 2
+INFO  19:44:03,771 - #16 ;
+INFO  19:44:03,771 - #37 x
+INFO  19:44:03,771 - #20 =
+INFO  19:44:03,771 - #37 y
+INFO  19:44:03,771 - #22 +
+INFO  19:44:03,772 - #36 2
+INFO  19:44:03,772 - #16 ;
+INFO  19:44:03,772 - #37 y
+INFO  19:44:03,772 - #20 =
+INFO  19:44:03,772 - #37 k
+INFO  19:44:03,772 - #2 (
+INFO  19:44:03,772 - #3 )
+INFO  19:44:03,773 - #22 +
+INFO  19:44:03,773 - #36 3
+INFO  19:44:03,773 - #16 ;
+INFO  19:44:03,773 - #10 print
+INFO  19:44:03,773 - #2 (
+INFO  19:44:03,773 - #37 y
+INFO  19:44:03,773 - #3 )
+INFO  19:44:03,774 - #16 ;
+INFO  19:44:03,774 - #14 return
+INFO  19:44:03,774 - #36 0
+INFO  19:44:03,774 - #16 ;
+INFO  19:44:03,774 - #7 }
+INFO  19:44:03,774 - #7 }
+INFO  19:44:03,781 - Deklarisana promenljiva x na liniji 2
+INFO  19:44:03,781 - Deklarisana promenljiva y na liniji 2
+INFO  19:44:03,781 - Obradjuje se funkcija k na liniji 5
+INFO  19:44:03,781 - Deklarisana promenljiva c na liniji 5
+ERROR 19:44:03,782 - Semanticka greska na liniji 5: funcija k nema return iskaz!
+INFO  19:44:03,782 - Obradjuje se funkcija main na liniji 10
+ERROR 19:44:03,782 - Semanticka greska na liniji 10: funcija main nema return iskaz!
+INFO  19:44:03,782 - Print calls = 1
+ERROR 19:44:03,782 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,137 @@
+INFO  00:17:08,726 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  00:17:08,791 - #8 program
+INFO  00:17:08,792 - #38 test302
+INFO  00:17:08,792 - #38 int
+INFO  00:17:08,797 - #38 i
+INFO  00:17:08,799 - #17 ;
+INFO  00:17:08,804 - #38 bool
+INFO  00:17:08,805 - #38 ibool
+INFO  00:17:08,806 - #17 ;
+INFO  00:17:08,806 - #38 int
+INFO  00:17:08,806 - #38 niz
+INFO  00:17:08,806 - #4 [
+INFO  00:17:08,806 - #5 ]
+INFO  00:17:08,807 - #17 ;
+INFO  00:17:08,807 - #6 {
+INFO  00:17:08,808 - #15 void
+INFO  00:17:08,808 - #38 main
+INFO  00:17:08,809 - #2 (
+INFO  00:17:08,809 - #3 )
+INFO  00:17:08,810 - #38 int
+INFO  00:17:08,810 - #38 a
+INFO  00:17:08,823 - #19 ,
+INFO  00:17:08,823 - #38 b
+INFO  00:17:08,823 - #19 ,
+INFO  00:17:08,824 - #38 c
+INFO  00:17:08,824 - #19 ,
+INFO  00:17:08,824 - #38 d
+INFO  00:17:08,824 - #19 ,
+INFO  00:17:08,825 - #38 e
+INFO  00:17:08,825 - #19 ,
+INFO  00:17:08,825 - #38 f
+INFO  00:17:08,825 - #17 ;
+INFO  00:17:08,825 - #6 {
+INFO  00:17:08,825 - #38 a
+INFO  00:17:08,826 - #21 =
+INFO  00:17:08,826 - #37 5
+INFO  00:17:08,827 - #17 ;
+INFO  00:17:08,829 - #38 b
+INFO  00:17:08,829 - #21 =
+INFO  00:17:08,829 - #37 7
+INFO  00:17:08,829 - #17 ;
+INFO  00:17:08,830 - #38 c
+INFO  00:17:08,830 - #21 =
+INFO  00:17:08,830 - #37 1
+INFO  00:17:08,830 - #17 ;
+INFO  00:17:08,831 - #38 d
+INFO  00:17:08,831 - #21 =
+INFO  00:17:08,831 - #37 8
+INFO  00:17:08,831 - #17 ;
+INFO  00:17:08,831 - #38 e
+INFO  00:17:08,831 - #21 =
+INFO  00:17:08,832 - #37 2
+INFO  00:17:08,832 - #17 ;
+INFO  00:17:08,832 - #38 f
+INFO  00:17:08,832 - #21 =
+INFO  00:17:08,832 - #37 5
+INFO  00:17:08,832 - #17 ;
+INFO  00:17:08,833 - #41 if
+INFO  00:17:08,833 - #2 (
+INFO  00:17:08,834 - #38 a
+INFO  00:17:08,834 - #35 >
+INFO  00:17:08,834 - #37 5
+INFO  00:17:08,835 - #30 &&
+INFO  00:17:08,836 - #38 b
+INFO  00:17:08,836 - #33 <
+INFO  00:17:08,837 - #37 7
+INFO  00:17:08,837 - #3 )
+INFO  00:17:08,840 - #6 {
+INFO  00:17:08,841 - #10 print
+INFO  00:17:08,841 - #2 (
+INFO  00:17:08,841 - #37 1
+INFO  00:17:08,841 - #3 )
+INFO  00:17:08,842 - #17 ;
+INFO  00:17:08,842 - #7 }
+INFO  00:17:08,842 - #42 else
+INFO  00:17:08,843 - #6 {
+INFO  00:17:08,843 - #41 if
+INFO  00:17:08,844 - #2 (
+INFO  00:17:08,844 - #38 c
+INFO  00:17:08,844 - #35 >
+INFO  00:17:08,844 - #37 1
+INFO  00:17:08,844 - #30 &&
+INFO  00:17:08,844 - #38 d
+INFO  00:17:08,844 - #35 >
+INFO  00:17:08,845 - #37 7
+INFO  00:17:08,845 - #3 )
+INFO  00:17:08,845 - #6 {
+INFO  00:17:08,845 - #10 print
+INFO  00:17:08,845 - #2 (
+INFO  00:17:08,845 - #37 2
+INFO  00:17:08,846 - #3 )
+INFO  00:17:08,847 - #17 ;
+INFO  00:17:08,847 - #7 }
+INFO  00:17:08,847 - #42 else
+INFO  00:17:08,848 - #6 {
+INFO  00:17:08,848 - #41 if
+INFO  00:17:08,848 - #2 (
+INFO  00:17:08,848 - #38 e
+INFO  00:17:08,848 - #33 <
+INFO  00:17:08,849 - #37 3
+INFO  00:17:08,849 - #30 &&
+INFO  00:17:08,856 - #38 f
+INFO  00:17:08,856 - #35 >
+INFO  00:17:08,857 - #37 5
+INFO  00:17:08,857 - #3 )
+INFO  00:17:08,857 - #6 {
+INFO  00:17:08,857 - #10 print
+INFO  00:17:08,857 - #2 (
+INFO  00:17:08,857 - #37 3
+INFO  00:17:08,857 - #3 )
+INFO  00:17:08,857 - #17 ;
+INFO  00:17:08,858 - #7 }
+INFO  00:17:08,858 - #42 else
+INFO  00:17:08,858 - #6 {
+INFO  00:17:08,858 - #10 print
+INFO  00:17:08,858 - #2 (
+INFO  00:17:08,858 - #37 0
+INFO  00:17:08,858 - #3 )
+INFO  00:17:08,858 - #17 ;
+INFO  00:17:08,858 - #7 }
+INFO  00:17:08,858 - #7 }
+INFO  00:17:08,859 - #7 }
+INFO  00:17:08,859 - #7 }
+INFO  00:17:08,859 - #7 }
+INFO  00:17:08,868 - Deklarisana promenljiva i na liniji 4
+INFO  00:17:08,869 - Deklarisana promenljiva ibool na liniji 5
+INFO  00:17:08,869 - Deklarisana promenljiva niz na liniji 6
+INFO  00:17:08,869 - Obradjuje se funkcija main na liniji 9
+INFO  00:17:08,869 - Deklarisana promenljiva a na liniji 10
+INFO  00:17:08,870 - Deklarisana promenljiva b na liniji 10
+INFO  00:17:08,870 - Deklarisana promenljiva c na liniji 10
+INFO  00:17:08,870 - Deklarisana promenljiva d na liniji 10
+INFO  00:17:08,871 - Deklarisana promenljiva e na liniji 10
+INFO  00:17:08,871 - Deklarisana promenljiva f na liniji 10
+INFO  00:17:08,872 - Print calls = 4
+INFO  00:17:08,874 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  00:17:08,890 - Parsiranje uspesno zavrseno!
