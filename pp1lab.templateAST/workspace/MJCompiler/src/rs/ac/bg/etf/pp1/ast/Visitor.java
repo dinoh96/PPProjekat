@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/0/2021 1:7:20
+// 29/0/2021 0:23:42
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,6 +11,7 @@ public interface Visitor {
     public void visit(Mulop Mulop);
     public void visit(Matched Matched);
     public void visit(Relop Relop);
+    public void visit(FormalParamDecl FormalParamDecl);
     public void visit(StatementList StatementList);
     public void visit(MulopFactor MulopFactor);
     public void visit(Addop Addop);
@@ -20,6 +21,8 @@ public interface Visitor {
     public void visit(Designator Designator);
     public void visit(ConstantVars ConstantVars);
     public void visit(ActParsList ActParsList);
+    public void visit(IfCondition IfCondition);
+    public void visit(ConstNode ConstNode);
     public void visit(ListOfVariables ListOfVariables);
     public void visit(FactorActPars FactorActPars);
     public void visit(VarOrConstDeclList VarOrConstDeclList);
@@ -108,7 +111,8 @@ public interface Visitor {
     public void visit(PrintStmt PrintStmt);
     public void visit(ReadStmt ReadStmt);
     public void visit(DesignatorStmt DesignatorStmt);
-    public void visit(IfCondition IfCondition);
+    public void visit(IfConditionError IfConditionError);
+    public void visit(IfCond IfCond);
     public void visit(UnmatchedIfElse UnmatchedIfElse);
     public void visit(UnmatchedIf UnmatchedIf);
     public void visit(WhileKeyWord WhileKeyWord);
@@ -119,7 +123,8 @@ public interface Visitor {
     public void visit(MatchedStmt MatchedStmt);
     public void visit(NoStmt NoStmt);
     public void visit(Statements Statements);
-    public void visit(FormalParamDecl FormalParamDecl);
+    public void visit(FormalParamDeclError FormalParamDeclError);
+    public void visit(FormalParameterDecl FormalParameterDecl);
     public void visit(SingleFormalParamDecl SingleFormalParamDecl);
     public void visit(FormalParamDecls FormalParamDecls);
     public void visit(NoFormParam NoFormParam);
@@ -135,7 +140,8 @@ public interface Visitor {
     public void visit(VarNode VarNode);
     public void visit(SingleVariable SingleVariable);
     public void visit(MultipleVariables MultipleVariables);
-    public void visit(ConstNode ConstNode);
+    public void visit(ErrorConstNodeComma ErrorConstNodeComma);
+    public void visit(ConstantNode ConstantNode);
     public void visit(SingleConstant SingleConstant);
     public void visit(MultipleConstants MultipleConstants);
     public void visit(VarDecl VarDecl);

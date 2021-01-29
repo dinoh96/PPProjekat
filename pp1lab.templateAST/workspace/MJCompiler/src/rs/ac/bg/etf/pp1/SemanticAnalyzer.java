@@ -32,7 +32,7 @@ import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
-public class SemanticPass extends VisitorAdaptor {
+public class SemanticAnalyzer extends VisitorAdaptor {
 
 	boolean errorDetected = false;
 	int printCallCount = 0;
@@ -126,7 +126,7 @@ public class SemanticPass extends VisitorAdaptor {
 		if (currentType.equals(Tab.noType)) {
 			report_error_v2("Nije definisan tip za promenljivu " + varNode.getVarName(), varNode);
 		}else {
-			report_info("Deklarisana promenljiva "+ varNode.getVarName(), varNode);
+			report_info("Deklarisana " + (currentMethod == null ? "globalna" : "lokalna" ) + " promenljiva "+ varNode.getVarName(), varNode);
 		}
 		
 		if (varNode.getArrayVarNode() instanceof ArrayDecl) {
@@ -138,38 +138,38 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 		
-	public void visit(ConstNode constNode) {
+	public void visit(ConstantNode constantNode) {
 		int val = -1;
 		Struct constType = Tab.noType;
-		if (Tab.currentScope().findSymbol(constNode.getConstName()) != null) {
-			report_error("Deklarisan je vec simbol sa imenom "+ constNode.getConstName(), constNode);
+		if (Tab.currentScope().findSymbol(constantNode.getConstName()) != null) {
+			report_error("Deklarisan je vec simbol sa imenom "+ constantNode.getConstName(), constantNode);
 			return;
 		}
 		if (currentType.equals(Tab.noType)) {
-			report_error_v2("Nije definisan tip za konstantu " + constNode.getConstName(), constNode);
+			report_error_v2("Nije definisan tip za konstantu " + constantNode.getConstName(), constantNode);
 		}else {
-			ConstantVars constValue = constNode.getConstantVars();
+			ConstantVars constValue = constantNode.getConstantVars();
 			if (constValue instanceof IntVar) {
 				// int const
 				int intVal = ((IntVar)constValue).getValue();
 				val = intVal;
 				constType = Tab.intType;
-				report_info("Deklarisana konstanta " + constNode.getConstName() + " sa vrednoscu " + intVal, constNode);
+				report_info("Deklarisana konstanta " + constantNode.getConstName() + " sa vrednoscu " + intVal, constantNode);
 			}else if (constValue instanceof CharVar) {
 				// char const
 				char charVal = ((CharVar)constValue).getValue();
 				val = Character.getNumericValue(charVal);
 				constType = Tab.charType;
-				report_info("Deklarisana konstanta " + constNode.getConstName() + " sa vrednoscu " + charVal, constNode);
+				report_info("Deklarisana konstanta " + constantNode.getConstName() + " sa vrednoscu " + charVal, constantNode);
 			}else if (constValue instanceof BoolVar) {
 				// boolean const
 				boolean boolVal = ((BoolVar)constValue).getValue();
 				val = boolVal ? 1 : 0;
 				constType = Boolean;
-				report_info("Deklarisana konstanta " + constNode.getConstName() + " sa vrednoscu " + boolVal, constNode);
+				report_info("Deklarisana konstanta " + constantNode.getConstName() + " sa vrednoscu " + boolVal, constantNode);
 			}
 		}
-		Obj constObj = Tab.insert(Obj.Con, constNode.getConstName(), currentType);
+		Obj constObj = Tab.insert(Obj.Con, constantNode.getConstName(), currentType);
 		constObj.setAdr(val);
 
 		
@@ -236,17 +236,16 @@ public class SemanticPass extends VisitorAdaptor {
 		report_info("Obradjuje se funkcija " + voidMethodTypeName.getMethName(), voidMethodTypeName);
 	}
 	
-	public void visit(FormalParamDecl formalParamDecl) {
-		Struct type = formalParamDecl.getType().struct;
-		String varName = formalParamDecl.getName(); 
+	public void visit(FormalParameterDecl formalParameterDecl) {
+		String varName = formalParameterDecl.getName(); 
 		
 		if (Tab.currentScope().findSymbol(varName) != null) {
-			report_error("Deklarisan je vec formalni parametar sa imenom "+ varName, formalParamDecl);
+			report_error("Deklarisan je vec formalni parametar sa imenom "+ varName, formalParameterDecl);
 			return;
 		}		
 		Obj var;
 		
-		if (formalParamDecl.getArrayVarNode() instanceof ArrayDecl) {
+		if (formalParameterDecl.getArrayVarNode() instanceof ArrayDecl) {
 			// array declaration
 			var = Tab.insert(Obj.Var, varName, new Struct(Struct.Array, currentType));
 		}else {
@@ -301,12 +300,16 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	public void visit(NewObjectVar newObjectVar) {
 		Struct size = newObjectVar.getExpr().struct;
+		Struct retStruct = new Struct(Struct.Array, currentType);
 		if(!size.equals(Tab.intType)) {
 			report_error_v2("Izraz za velicinu niza mora biti tipa 'int'", newObjectVar);
-			newObjectVar.struct = Tab.noType;
-			return;
+			retStruct = Tab.noType;
 		}
-		newObjectVar.struct = new Struct(Struct.Array, currentType);
+		if (CodeGenerator.checkParent(newObjectVar, PrintStmt.class)) {
+			report_error_v2("Nije dozvoljena 'new' naredba u print naredbi", newObjectVar);
+			retStruct = Tab.noType;
+		}
+		newObjectVar.struct = retStruct;
 		
 		//da li treba ovde resetovati currentType?
 		currentType = Tab.noType;
@@ -419,7 +422,10 @@ public class SemanticPass extends VisitorAdaptor {
 		if (obj == Tab.noObj) { 
 			report_error_v2("Ime "+designatorNonArray.getName()+" nije deklarisano! ", designatorNonArray);
 		}
-		
+		if (obj.getFpPos() > 0) {
+			report_info("Koristi se formalni parametar '" + designatorNonArray.getName() + "'"/* + obj.toString()*/, designatorNonArray);
+		}
+			
 		designatorNonArray.obj = obj;
 	}
 	
@@ -430,6 +436,8 @@ public class SemanticPass extends VisitorAdaptor {
 				report_error("Indeks mora biti tipa 'int'", designatorArray);
 			}
 		}
+		
+		report_info("Pronadjen pristup elementu niza '" + obj.getName() + "'", designatorArray);
 		designatorArray.obj = new Obj(Obj.Elem, obj.getName() + "$elem", obj.getType().getElemType());
 	}
 	
@@ -439,6 +447,9 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error_v2("Promenljiva " + obj.getName() + " nije nizovnog tipa", designatorArrayName);
 			designatorArrayName.obj = Tab.noObj;
 			return;
+		}
+		if (obj.getFpPos() > 0) {
+			report_info("Koristi se formalni parametar '" + designatorArrayName.getName() + "'"/* + obj.toString() */, designatorArrayName);
 		}
 		designatorArrayName.obj = obj;
 	}
@@ -506,16 +517,16 @@ public class SemanticPass extends VisitorAdaptor {
 			multiCondFact.struct = Tab.noType;
 			return;
 		}
-		multiCondFact.struct = SemanticPass.Boolean;
+		multiCondFact.struct = SemanticAnalyzer.Boolean;
 	}
 
 	public void visit(SingleCondFact singleCondFact) {
-		if (singleCondFact.getNonTernaryExpression().struct != SemanticPass.Boolean) {
+		if (singleCondFact.getNonTernaryExpression().struct != SemanticAnalyzer.Boolean) {
 			report_error_v2("Uslov mora biti logickog tipa", singleCondFact);
 			singleCondFact.struct = Tab.noType;
 			return;
 		}
-		singleCondFact.struct = SemanticPass.Boolean;
+		singleCondFact.struct = SemanticAnalyzer.Boolean;
 	}
 	
 	public void visit(DesignatorAssignment designatorAssignment) {

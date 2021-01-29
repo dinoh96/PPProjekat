@@ -1,0 +1,110 @@
+INFO  22:01:41,462 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:01:41,504 - #8 program
+INFO  22:01:41,504 - #38 test301
+INFO  22:01:41,504 - #38 int
+INFO  22:01:41,505 - #38 niz
+INFO  22:01:41,506 - #4 [
+INFO  22:01:41,506 - #5 ]
+INFO  22:01:41,506 - #17 ;
+INFO  22:01:41,507 - #38 char
+INFO  22:01:41,508 - #38 nizch
+INFO  22:01:41,508 - #4 [
+INFO  22:01:41,508 - #5 ]
+INFO  22:01:41,508 - #17 ;
+INFO  22:01:41,508 - #6 {
+INFO  22:01:41,509 - #15 void
+INFO  22:01:41,509 - #38 main
+INFO  22:01:41,509 - #2 (
+INFO  22:01:41,509 - #3 )
+INFO  22:01:41,510 - #38 int
+INFO  22:01:41,510 - #38 a
+INFO  22:01:41,510 - #19 ,
+INFO  22:01:41,513 - #38 b
+INFO  22:01:41,513 - #19 ,
+INFO  22:01:41,513 - #38 c
+INFO  22:01:41,513 - #19 ,
+INFO  22:01:41,513 - #38 d
+INFO  22:01:41,513 - #17 ;
+INFO  22:01:41,513 - #38 char
+INFO  22:01:41,513 - #38 A
+INFO  22:01:41,513 - #19 ,
+INFO  22:01:41,514 - #38 B
+INFO  22:01:41,514 - #19 ,
+INFO  22:01:41,514 - #38 C
+INFO  22:01:41,514 - #19 ,
+INFO  22:01:41,514 - #38 D
+INFO  22:01:41,514 - #17 ;
+INFO  22:01:41,514 - #38 bool
+INFO  22:01:41,514 - #38 boolVar
+INFO  22:01:41,514 - #17 ;
+INFO  22:01:41,514 - #6 {
+INFO  22:01:41,515 - #38 a
+INFO  22:01:41,515 - #21 =
+INFO  22:01:41,515 - #37 1
+INFO  22:01:41,515 - #17 ;
+INFO  22:01:41,517 - #38 b
+INFO  22:01:41,517 - #21 =
+INFO  22:01:41,517 - #37 2
+INFO  22:01:41,517 - #17 ;
+INFO  22:01:41,517 - #38 c
+INFO  22:01:41,517 - #21 =
+INFO  22:01:41,517 - #37 3
+INFO  22:01:41,518 - #17 ;
+INFO  22:01:41,518 - #38 d
+INFO  22:01:41,518 - #21 =
+INFO  22:01:41,518 - #37 4
+INFO  22:01:41,518 - #17 ;
+INFO  22:01:41,518 - #38 A
+INFO  22:01:41,518 - #21 =
+INFO  22:01:41,518 - #40 A
+INFO  22:01:41,518 - #17 ;
+INFO  22:01:41,518 - #38 B
+INFO  22:01:41,519 - #21 =
+INFO  22:01:41,519 - #40 b
+INFO  22:01:41,519 - #17 ;
+INFO  22:01:41,519 - #38 C
+INFO  22:01:41,519 - #21 =
+INFO  22:01:41,519 - #40 C
+INFO  22:01:41,519 - #17 ;
+INFO  22:01:41,519 - #38 D
+INFO  22:01:41,519 - #21 =
+INFO  22:01:41,519 - #40 d
+INFO  22:01:41,520 - #17 ;
+INFO  22:01:41,520 - #38 boolVar
+INFO  22:01:41,520 - #21 =
+INFO  22:01:41,520 - #39 false
+INFO  22:01:41,520 - #17 ;
+INFO  22:01:41,520 - #41 if
+INFO  22:01:41,520 - #2 (
+INFO  22:01:41,521 - #38 a
+INFO  22:01:41,521 - #32 !=
+INFO  22:01:41,521 - #38 b
+INFO  22:01:41,522 - #3 )
+INFO  22:01:41,523 - #10 print
+INFO  22:01:41,524 - #2 (
+INFO  22:01:41,524 - #39 true
+INFO  22:01:41,524 - #3 )
+INFO  22:01:41,524 - #17 ;
+INFO  22:01:41,524 - #42 else
+INFO  22:01:41,525 - #10 print
+INFO  22:01:41,525 - #2 (
+INFO  22:01:41,525 - #37 0
+INFO  22:01:41,525 - #3 )
+INFO  22:01:41,525 - #17 ;
+INFO  22:01:41,525 - #7 }
+INFO  22:01:41,525 - #7 }
+INFO  22:01:41,532 - Deklarisana promenljiva niz na liniji 4
+INFO  22:01:41,533 - Deklarisana promenljiva nizch na liniji 5
+INFO  22:01:41,533 - Obradjuje se funkcija main na liniji 8
+INFO  22:01:41,533 - Deklarisana promenljiva a na liniji 9
+INFO  22:01:41,533 - Deklarisana promenljiva b na liniji 9
+INFO  22:01:41,533 - Deklarisana promenljiva c na liniji 9
+INFO  22:01:41,537 - Deklarisana promenljiva d na liniji 9
+INFO  22:01:41,537 - Deklarisana promenljiva A na liniji 10
+INFO  22:01:41,538 - Deklarisana promenljiva B na liniji 10
+INFO  22:01:41,538 - Deklarisana promenljiva C na liniji 10
+INFO  22:01:41,538 - Deklarisana promenljiva D na liniji 10
+INFO  22:01:41,538 - Deklarisana promenljiva boolVar na liniji 11
+INFO  22:01:41,538 - Print calls = 2
+INFO  22:01:41,539 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  22:01:41,545 - Parsiranje uspesno zavrseno!

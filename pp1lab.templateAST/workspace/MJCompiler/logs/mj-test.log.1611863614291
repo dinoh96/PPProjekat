@@ -1,0 +1,54 @@
+INFO  20:52:42,000 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:52:42,059 - #8 program
+INFO  20:52:42,059 - #38 test302
+INFO  20:52:42,059 - #16 const
+INFO  20:52:42,061 - #38 int
+INFO  20:52:42,061 - #38 jedan
+INFO  20:52:42,062 - #21 =
+INFO  20:52:42,062 - #37 1
+INFO  20:52:42,062 - #17 ;
+INFO  20:52:42,063 - #38 int
+INFO  20:52:42,064 - #38 niz
+INFO  20:52:42,064 - #4 [
+INFO  20:52:42,064 - #5 ]
+INFO  20:52:42,064 - #17 ;
+INFO  20:52:42,066 - #6 {
+INFO  20:52:42,067 - #38 bool
+INFO  20:52:42,067 - #38 verify
+INFO  20:52:42,067 - #2 (
+INFO  20:52:42,068 - #3 )
+INFO  20:52:42,068 - #6 {
+INFO  20:52:42,069 - #10 print
+INFO  20:52:42,081 - #2 (
+INFO  20:52:42,081 - #40 v
+INFO  20:52:42,081 - #3 )
+INFO  20:52:42,083 - #17 ;
+INFO  20:52:42,083 - #14 return
+INFO  20:52:42,083 - #39 false
+INFO  20:52:42,083 - #17 ;
+INFO  20:52:42,084 - #7 }
+INFO  20:52:42,084 - #15 void
+INFO  20:52:42,085 - #38 main
+INFO  20:52:42,085 - #2 (
+INFO  20:52:42,085 - #3 )
+INFO  20:52:42,085 - #6 {
+INFO  20:52:42,085 - #10 print
+INFO  20:52:42,085 - #2 (
+INFO  20:52:42,085 - #38 verify
+INFO  20:52:42,085 - #2 (
+INFO  20:52:42,085 - #3 )
+INFO  20:52:42,086 - #20 ?
+INFO  20:52:42,088 - #40 t
+INFO  20:52:42,088 - #18 :
+INFO  20:52:42,089 - #40 f
+INFO  20:52:42,089 - #3 )
+INFO  20:52:42,090 - #17 ;
+INFO  20:52:42,090 - #7 }
+INFO  20:52:42,091 - #7 }
+INFO  20:52:42,098 - Deklarisana konstanta jedan sa vrednoscu 1 na liniji 5
+INFO  20:52:42,098 - Deklarisana promenljiva niz na liniji 6
+INFO  20:52:42,098 - Obradjuje se funkcija verify na liniji 9
+INFO  20:52:42,098 - Obradjuje se funkcija main na liniji 14
+INFO  20:52:42,098 - Pronadjen poziv funkcije verify na liniji 16
+INFO  20:52:42,100 - Print calls = 2
+INFO  20:52:42,100 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj

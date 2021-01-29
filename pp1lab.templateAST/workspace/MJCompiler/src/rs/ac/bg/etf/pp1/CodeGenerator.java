@@ -109,6 +109,16 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	private boolean isTernary = false;
 	
+	public static boolean checkParent(SyntaxNode node, Object parentClass) {
+		SyntaxNode parent = node.getParent();
+		while(parent != null) {
+			if (parent.getClass() == parentClass) 
+				return true;
+			parent = parent.getParent();
+		}
+		return false;
+	}
+	
 	private int varCount;
 	
 	private int paramCnt;
@@ -323,7 +333,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	@Override
 	public void visit(PrintStmt PrintStmt) {
-		if (PrintStmt.getExpr().struct == Tab.intType) {
+		if (PrintStmt.getExpr().struct.equals(Tab.intType) || PrintStmt.getExpr().struct.equals(SemanticAnalyzer.Boolean) ) {
 			Code.put(Code.const_5);
 			Code.put(Code.print);
 		}else {
@@ -362,14 +372,9 @@ public class CodeGenerator extends VisitorAdaptor {
 
 	public void visit(MultiCondFact multiCondFact) {
 		if (!isTernary) {
-			SyntaxNode parent = multiCondFact.getParent();
-			while(!(parent instanceof Program)) {
-				if (parent instanceof TernaryExpression) {
-					isTernary = true;
-					conditions.push(new ConditionHelper(false));
-					break;
-				}
-				parent = parent.getParent();
+			if (checkParent(multiCondFact, TernaryExpression.class)) {
+				isTernary = true;
+				conditions.push(new ConditionHelper(false));
 			}
 		}
 		
@@ -403,6 +408,12 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(SingleCondFact singleCondFact) {
+		if (!isTernary) {
+			if (checkParent(singleCondFact, TernaryExpression.class)) {
+				isTernary = true;
+				conditions.push(new ConditionHelper(false));
+			}
+		}
 		Code.loadConst(1);
 		Code.putFalseJump(Code.eq, 0);
 		conditions.peek().AddCondFact();

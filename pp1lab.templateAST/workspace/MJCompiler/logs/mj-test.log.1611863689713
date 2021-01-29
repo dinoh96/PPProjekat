@@ -1,0 +1,55 @@
+INFO  20:53:34,299 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:53:34,349 - #8 program
+INFO  20:53:34,349 - #38 test302
+INFO  20:53:34,349 - #16 const
+INFO  20:53:34,351 - #38 int
+INFO  20:53:34,351 - #38 jedan
+INFO  20:53:34,352 - #21 =
+INFO  20:53:34,352 - #37 1
+INFO  20:53:34,353 - #17 ;
+INFO  20:53:34,354 - #38 int
+INFO  20:53:34,355 - #38 niz
+INFO  20:53:34,355 - #4 [
+INFO  20:53:34,355 - #5 ]
+INFO  20:53:34,355 - #17 ;
+INFO  20:53:34,357 - #6 {
+INFO  20:53:34,358 - #38 bool
+INFO  20:53:34,359 - #38 verify
+INFO  20:53:34,359 - #2 (
+INFO  20:53:34,359 - #3 )
+INFO  20:53:34,360 - #6 {
+INFO  20:53:34,360 - #10 print
+INFO  20:53:34,362 - #2 (
+INFO  20:53:34,362 - #40 v
+INFO  20:53:34,362 - #3 )
+INFO  20:53:34,365 - #17 ;
+INFO  20:53:34,365 - #14 return
+INFO  20:53:34,366 - #39 false
+INFO  20:53:34,366 - #17 ;
+INFO  20:53:34,366 - #7 }
+INFO  20:53:34,366 - #15 void
+INFO  20:53:34,368 - #38 main
+INFO  20:53:34,369 - #2 (
+INFO  20:53:34,369 - #3 )
+INFO  20:53:34,370 - #6 {
+INFO  20:53:34,370 - #10 print
+INFO  20:53:34,370 - #2 (
+INFO  20:53:34,370 - #38 verify
+INFO  20:53:34,370 - #2 (
+INFO  20:53:34,370 - #3 )
+INFO  20:53:34,371 - #20 ?
+INFO  20:53:34,374 - #40 t
+INFO  20:53:34,374 - #18 :
+INFO  20:53:34,375 - #40 f
+INFO  20:53:34,375 - #3 )
+INFO  20:53:34,376 - #17 ;
+INFO  20:53:34,376 - #7 }
+INFO  20:53:34,376 - #7 }
+INFO  20:53:34,384 - Deklarisana konstanta jedan sa vrednoscu 1 na liniji 5
+INFO  20:53:34,385 - Deklarisana promenljiva niz na liniji 6
+INFO  20:53:34,385 - Obradjuje se funkcija verify na liniji 9
+INFO  20:53:34,386 - Obradjuje se funkcija main na liniji 14
+INFO  20:53:34,386 - Pronadjen poziv funkcije verify na liniji 16
+INFO  20:53:34,388 - Print calls = 2
+INFO  20:53:34,390 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  20:53:34,395 - Parsiranje uspesno zavrseno!

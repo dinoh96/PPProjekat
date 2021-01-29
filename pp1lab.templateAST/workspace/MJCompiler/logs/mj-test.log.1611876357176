@@ -1,0 +1,180 @@
+INFO  00:25:42,011 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  00:25:42,052 - #8 program
+INFO  00:25:42,052 - #38 test301
+INFO  00:25:42,052 - #38 int
+INFO  00:25:42,053 - #38 niz
+INFO  00:25:42,054 - #4 [
+INFO  00:25:42,054 - #5 ]
+INFO  00:25:42,054 - #17 ;
+INFO  00:25:42,056 - #38 char
+INFO  00:25:42,058 - #38 nizch
+INFO  00:25:42,058 - #4 [
+INFO  00:25:42,058 - #5 ]
+INFO  00:25:42,059 - #17 ;
+INFO  00:25:42,059 - #6 {
+INFO  00:25:42,059 - #38 int
+INFO  00:25:42,062 - #38 f
+INFO  00:25:42,062 - #2 (
+INFO  00:25:42,063 - #38 int
+INFO  00:25:42,063 - #38 a
+INFO  00:25:42,063 - #19 ,
+INFO  00:25:42,065 - #38 char
+INFO  00:25:42,068 - #38 b
+INFO  00:25:42,068 - #3 )
+INFO  00:25:42,068 - #6 {
+INFO  00:25:42,070 - #14 return
+INFO  00:25:42,072 - #37 1
+INFO  00:25:42,072 - #17 ;
+INFO  00:25:42,074 - #7 }
+INFO  00:25:42,075 - #15 void
+INFO  00:25:42,075 - #38 main
+INFO  00:25:42,075 - #2 (
+INFO  00:25:42,076 - #3 )
+INFO  00:25:42,076 - #38 int
+INFO  00:25:42,076 - #38 a
+INFO  00:25:42,076 - #19 ,
+INFO  00:25:42,076 - #38 b
+INFO  00:25:42,076 - #19 ,
+INFO  00:25:42,077 - #38 c
+INFO  00:25:42,077 - #19 ,
+INFO  00:25:42,077 - #38 d
+INFO  00:25:42,077 - #17 ;
+INFO  00:25:42,077 - #38 char
+INFO  00:25:42,077 - #38 A
+INFO  00:25:42,077 - #19 ,
+INFO  00:25:42,077 - #38 B
+INFO  00:25:42,078 - #19 ,
+INFO  00:25:42,078 - #38 C
+INFO  00:25:42,078 - #19 ,
+INFO  00:25:42,078 - #38 D
+INFO  00:25:42,078 - #17 ;
+INFO  00:25:42,078 - #38 bool
+INFO  00:25:42,078 - #38 boolVar
+INFO  00:25:42,078 - #17 ;
+INFO  00:25:42,078 - #6 {
+INFO  00:25:42,078 - #38 a
+INFO  00:25:42,079 - #21 =
+INFO  00:25:42,079 - #37 1
+INFO  00:25:42,079 - #17 ;
+INFO  00:25:42,079 - #38 b
+INFO  00:25:42,079 - #21 =
+INFO  00:25:42,079 - #37 2
+INFO  00:25:42,079 - #17 ;
+INFO  00:25:42,079 - #38 c
+INFO  00:25:42,080 - #21 =
+INFO  00:25:42,080 - #37 3
+INFO  00:25:42,080 - #17 ;
+INFO  00:25:42,080 - #38 d
+INFO  00:25:42,080 - #21 =
+INFO  00:25:42,080 - #37 4
+INFO  00:25:42,080 - #17 ;
+INFO  00:25:42,080 - #38 A
+INFO  00:25:42,080 - #21 =
+INFO  00:25:42,080 - #40 A
+INFO  00:25:42,081 - #17 ;
+INFO  00:25:42,081 - #38 B
+INFO  00:25:42,081 - #21 =
+INFO  00:25:42,081 - #40 b
+INFO  00:25:42,081 - #17 ;
+INFO  00:25:42,081 - #38 C
+INFO  00:25:42,081 - #21 =
+INFO  00:25:42,081 - #40 C
+INFO  00:25:42,081 - #17 ;
+INFO  00:25:42,081 - #38 D
+INFO  00:25:42,081 - #21 =
+INFO  00:25:42,082 - #40 d
+INFO  00:25:42,082 - #17 ;
+INFO  00:25:42,082 - #41 if
+INFO  00:25:42,082 - #2 (
+INFO  00:25:42,082 - #3 )
+ERROR 00:25:42,082 - 
+Sintaksna greska na liniji 29
+INFO  00:25:42,083 - #10 print
+INFO  00:25:42,083 - #2 (
+INFO  00:25:42,083 - #37 1
+INFO  00:25:42,083 - #3 )
+ERROR 00:25:42,083 - Izvrsen oporavak do ) u liniji 29
+INFO  00:25:42,084 - #17 ;
+INFO  00:25:42,084 - #10 print
+INFO  00:25:42,085 - #2 (
+INFO  00:25:42,085 - #38 a
+INFO  00:25:42,085 - #23 +
+INFO  00:25:42,085 - #38 b
+INFO  00:25:42,086 - #33 <
+INFO  00:25:42,086 - #38 c
+INFO  00:25:42,087 - #23 +
+INFO  00:25:42,087 - #38 d
+INFO  00:25:42,087 - #20 ?
+INFO  00:25:42,089 - #38 a
+INFO  00:25:42,089 - #18 :
+INFO  00:25:42,089 - #38 b
+INFO  00:25:42,090 - #3 )
+INFO  00:25:42,090 - #17 ;
+INFO  00:25:42,090 - #38 niz
+INFO  00:25:42,091 - #21 =
+INFO  00:25:42,091 - #13 new
+INFO  00:25:42,091 - #38 int
+INFO  00:25:42,091 - #4 [
+INFO  00:25:42,091 - #38 a
+INFO  00:25:42,091 - #23 +
+INFO  00:25:42,091 - #38 b
+INFO  00:25:42,091 - #5 ]
+INFO  00:25:42,091 - #17 ;
+INFO  00:25:42,092 - #10 print
+INFO  00:25:42,092 - #2 (
+INFO  00:25:42,092 - #38 len
+INFO  00:25:42,092 - #2 (
+INFO  00:25:42,092 - #38 niz
+INFO  00:25:42,092 - #3 )
+INFO  00:25:42,092 - #3 )
+INFO  00:25:42,093 - #17 ;
+INFO  00:25:42,093 - #38 boolVar
+INFO  00:25:42,093 - #21 =
+INFO  00:25:42,093 - #39 false
+INFO  00:25:42,093 - #17 ;
+INFO  00:25:42,093 - #10 print
+INFO  00:25:42,093 - #2 (
+INFO  00:25:42,093 - #38 a
+INFO  00:25:42,093 - #31 ==
+INFO  00:25:42,093 - #38 b
+INFO  00:25:42,094 - #20 ?
+INFO  00:25:42,094 - #37 1
+INFO  00:25:42,094 - #18 :
+INFO  00:25:42,094 - #37 0
+INFO  00:25:42,094 - #3 )
+INFO  00:25:42,094 - #17 ;
+INFO  00:25:42,094 - #41 if
+INFO  00:25:42,094 - #2 (
+INFO  00:25:42,094 - #38 a
+INFO  00:25:42,095 - #32 !=
+INFO  00:25:42,095 - #38 b
+INFO  00:25:42,095 - #3 )
+INFO  00:25:42,095 - #10 print
+INFO  00:25:42,095 - #2 (
+INFO  00:25:42,095 - #37 1
+INFO  00:25:42,095 - #3 )
+INFO  00:25:42,095 - #17 ;
+INFO  00:25:42,095 - #42 else
+INFO  00:25:42,095 - #10 print
+INFO  00:25:42,096 - #2 (
+INFO  00:25:42,096 - #37 0
+INFO  00:25:42,096 - #3 )
+INFO  00:25:42,096 - #17 ;
+INFO  00:25:42,096 - #7 }
+INFO  00:25:42,097 - #7 }
+INFO  00:25:42,102 - Deklarisana promenljiva niz na liniji 4
+INFO  00:25:42,102 - Deklarisana promenljiva nizch na liniji 5
+INFO  00:25:42,107 - Obradjuje se funkcija f na liniji 9
+INFO  00:25:42,107 - Obradjuje se funkcija main na liniji 12
+INFO  00:25:42,107 - Deklarisana promenljiva a na liniji 13
+INFO  00:25:42,107 - Deklarisana promenljiva b na liniji 13
+INFO  00:25:42,107 - Deklarisana promenljiva c na liniji 13
+INFO  00:25:42,108 - Deklarisana promenljiva d na liniji 13
+INFO  00:25:42,108 - Deklarisana promenljiva A na liniji 14
+INFO  00:25:42,108 - Deklarisana promenljiva B na liniji 14
+INFO  00:25:42,108 - Deklarisana promenljiva C na liniji 14
+INFO  00:25:42,108 - Deklarisana promenljiva D na liniji 14
+INFO  00:25:42,108 - Deklarisana promenljiva boolVar na liniji 15
+INFO  00:25:42,109 - Pronadjen poziv funkcije len na liniji 36
+INFO  00:25:42,110 - Print calls = 6
+ERROR 00:25:42,111 - Parsiranje NIJE uspesno zavrseno!

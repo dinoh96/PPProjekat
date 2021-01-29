@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/0/2021 1:7:20
+// 29/0/2021 0:23:42
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,6 +11,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Mulop Mulop) { }
     public void visit(Matched Matched) { }
     public void visit(Relop Relop) { }
+    public void visit(FormalParamDecl FormalParamDecl) { }
     public void visit(StatementList StatementList) { }
     public void visit(MulopFactor MulopFactor) { }
     public void visit(Addop Addop) { }
@@ -20,6 +21,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Designator Designator) { }
     public void visit(ConstantVars ConstantVars) { }
     public void visit(ActParsList ActParsList) { }
+    public void visit(IfCondition IfCondition) { }
+    public void visit(ConstNode ConstNode) { }
     public void visit(ListOfVariables ListOfVariables) { }
     public void visit(FactorActPars FactorActPars) { }
     public void visit(VarOrConstDeclList VarOrConstDeclList) { }
@@ -108,7 +111,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(PrintStmt PrintStmt) { visit(); }
     public void visit(ReadStmt ReadStmt) { visit(); }
     public void visit(DesignatorStmt DesignatorStmt) { visit(); }
-    public void visit(IfCondition IfCondition) { visit(); }
+    public void visit(IfConditionError IfConditionError) { visit(); }
+    public void visit(IfCond IfCond) { visit(); }
     public void visit(UnmatchedIfElse UnmatchedIfElse) { visit(); }
     public void visit(UnmatchedIf UnmatchedIf) { visit(); }
     public void visit(WhileKeyWord WhileKeyWord) { visit(); }
@@ -119,7 +123,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MatchedStmt MatchedStmt) { visit(); }
     public void visit(NoStmt NoStmt) { visit(); }
     public void visit(Statements Statements) { visit(); }
-    public void visit(FormalParamDecl FormalParamDecl) { visit(); }
+    public void visit(FormalParamDeclError FormalParamDeclError) { visit(); }
+    public void visit(FormalParameterDecl FormalParameterDecl) { visit(); }
     public void visit(SingleFormalParamDecl SingleFormalParamDecl) { visit(); }
     public void visit(FormalParamDecls FormalParamDecls) { visit(); }
     public void visit(NoFormParam NoFormParam) { visit(); }
@@ -135,7 +140,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VarNode VarNode) { visit(); }
     public void visit(SingleVariable SingleVariable) { visit(); }
     public void visit(MultipleVariables MultipleVariables) { visit(); }
-    public void visit(ConstNode ConstNode) { visit(); }
+    public void visit(ErrorConstNodeComma ErrorConstNodeComma) { visit(); }
+    public void visit(ConstantNode ConstantNode) { visit(); }
     public void visit(SingleConstant SingleConstant) { visit(); }
     public void visit(MultipleConstants MultipleConstants) { visit(); }
     public void visit(VarDecl VarDecl) { visit(); }

@@ -1,0 +1,25 @@
+INFO  00:20:15,768 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  00:20:15,808 - #8 program
+INFO  00:20:15,808 - #38 test301
+INFO  00:20:15,808 - #38 int
+INFO  00:20:15,809 - #38 niz
+INFO  00:20:15,810 - #4 [
+INFO  00:20:15,810 - #5 ]
+INFO  00:20:15,810 - #17 ;
+INFO  00:20:15,811 - #38 char
+INFO  00:20:15,812 - #38 nizch
+INFO  00:20:15,812 - #4 [
+INFO  00:20:15,812 - #5 ]
+INFO  00:20:15,812 - #17 ;
+INFO  00:20:15,812 - #6 {
+INFO  00:20:15,813 - #38 int
+INFO  00:20:15,813 - #38 f
+INFO  00:20:15,813 - #2 (
+INFO  00:20:15,813 - #38 int
+INFO  00:20:15,814 - #38 a
+INFO  00:20:15,814 - #19 ,
+INFO  00:20:15,815 - #38 char
+INFO  00:20:15,817 - #3 )
+ERROR 00:20:15,817 - 
+Sintaksna greska na liniji 9
+ERROR 00:20:15,817 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 9

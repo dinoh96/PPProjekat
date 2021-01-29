@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
 import java_cup.runtime.Symbol;
+import rs.ac.bg.etf.pp1.ast.Program;
 import rs.ac.bg.etf.pp1.ast.SyntaxNode;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
 import rs.etf.pp1.mj.runtime.Code;
@@ -45,12 +46,14 @@ public class MJParserTest {
 	        SyntaxNode prog = (SyntaxNode)(s.value);
 	        
 			Tab.init(); // Universe scope
-			SemanticPass semanticCheck = new SemanticPass();
+			SemanticAnalyzer semanticCheck = new SemanticAnalyzer();
 			prog.traverseBottomUp(semanticCheck);
 			
 			
 	        log.info("Print calls = " + semanticCheck.printCallCount);
 	        Tab.dump();
+	        //log.info(((Program)prog).toString(""));
+	        
 	        
 	        if (!p.errorDetected && semanticCheck.passed()) {
 	        	parseSuccessful = true;

@@ -1,0 +1,130 @@
+INFO  22:55:45,931 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:55:45,983 - #8 program
+INFO  22:55:45,983 - #38 test301
+INFO  22:55:45,983 - #38 int
+INFO  22:55:45,985 - #38 niz
+INFO  22:55:45,985 - #4 [
+INFO  22:55:45,985 - #5 ]
+INFO  22:55:45,985 - #17 ;
+INFO  22:55:45,987 - #38 char
+INFO  22:55:45,988 - #38 nizch
+INFO  22:55:45,988 - #4 [
+INFO  22:55:45,988 - #5 ]
+INFO  22:55:45,988 - #17 ;
+INFO  22:55:45,988 - #6 {
+INFO  22:55:45,988 - #15 void
+INFO  22:55:45,989 - #38 main
+INFO  22:55:45,989 - #2 (
+INFO  22:55:45,989 - #3 )
+INFO  22:55:45,990 - #38 int
+INFO  22:55:45,990 - #38 a
+INFO  22:55:45,990 - #19 ,
+INFO  22:55:45,994 - #38 b
+INFO  22:55:45,994 - #19 ,
+INFO  22:55:45,994 - #38 c
+INFO  22:55:45,994 - #19 ,
+INFO  22:55:45,994 - #38 d
+INFO  22:55:45,995 - #17 ;
+INFO  22:55:45,995 - #38 char
+INFO  22:55:45,995 - #38 A
+INFO  22:55:45,995 - #19 ,
+INFO  22:55:45,995 - #38 B
+INFO  22:55:45,995 - #19 ,
+INFO  22:55:45,995 - #38 C
+INFO  22:55:45,995 - #19 ,
+INFO  22:55:45,995 - #38 D
+INFO  22:55:45,996 - #17 ;
+INFO  22:55:45,996 - #38 bool
+INFO  22:55:45,996 - #38 boolVar
+INFO  22:55:45,996 - #17 ;
+INFO  22:55:45,996 - #6 {
+INFO  22:55:45,996 - #38 a
+INFO  22:55:45,997 - #21 =
+INFO  22:55:45,997 - #37 1
+INFO  22:55:45,998 - #17 ;
+INFO  22:55:45,999 - #38 b
+INFO  22:55:46,000 - #21 =
+INFO  22:55:46,000 - #37 2
+INFO  22:55:46,000 - #17 ;
+INFO  22:55:46,000 - #38 c
+INFO  22:55:46,000 - #21 =
+INFO  22:55:46,001 - #37 3
+INFO  22:55:46,001 - #17 ;
+INFO  22:55:46,001 - #38 d
+INFO  22:55:46,001 - #21 =
+INFO  22:55:46,001 - #37 4
+INFO  22:55:46,001 - #17 ;
+INFO  22:55:46,001 - #38 A
+INFO  22:55:46,002 - #21 =
+INFO  22:55:46,002 - #40 A
+INFO  22:55:46,002 - #17 ;
+INFO  22:55:46,002 - #38 B
+INFO  22:55:46,003 - #21 =
+INFO  22:55:46,003 - #40 b
+INFO  22:55:46,003 - #17 ;
+INFO  22:55:46,003 - #38 C
+INFO  22:55:46,003 - #21 =
+INFO  22:55:46,004 - #40 C
+INFO  22:55:46,004 - #17 ;
+INFO  22:55:46,004 - #38 D
+INFO  22:55:46,004 - #21 =
+INFO  22:55:46,004 - #40 d
+INFO  22:55:46,005 - #38 niz
+ERROR 22:55:46,005 - 
+Sintaksna greska na liniji 24
+INFO  22:55:46,005 - #21 =
+INFO  22:55:46,005 - #13 new
+INFO  22:55:46,005 - #38 int
+INFO  22:55:46,006 - #4 [
+INFO  22:55:46,006 - #38 a
+INFO  22:55:46,006 - #5 ]
+INFO  22:55:46,006 - #17 ;
+INFO  22:55:46,006 - #38 boolVar
+INFO  22:55:46,006 - #21 =
+INFO  22:55:46,007 - #39 false
+ERROR 22:55:46,007 - Izvrsen oporavak do ; u liniji 22
+INFO  22:55:46,008 - #17 ;
+INFO  22:55:46,008 - #10 print
+INFO  22:55:46,008 - #2 (
+INFO  22:55:46,009 - #38 a
+INFO  22:55:46,009 - #31 ==
+INFO  22:55:46,009 - #38 b
+INFO  22:55:46,010 - #20 ?
+INFO  22:55:46,012 - #37 1
+INFO  22:55:46,013 - #18 :
+INFO  22:55:46,013 - #37 0
+INFO  22:55:46,014 - #3 )
+INFO  22:55:46,016 - #17 ;
+INFO  22:55:46,016 - #41 if
+INFO  22:55:46,016 - #2 (
+INFO  22:55:46,017 - #38 a
+INFO  22:55:46,017 - #32 !=
+INFO  22:55:46,017 - #38 b
+INFO  22:55:46,018 - #3 )
+INFO  22:55:46,018 - #10 print
+INFO  22:55:46,018 - #2 (
+INFO  22:55:46,018 - #37 1
+INFO  22:55:46,018 - #3 )
+INFO  22:55:46,019 - #17 ;
+INFO  22:55:46,019 - #42 else
+INFO  22:55:46,019 - #10 print
+INFO  22:55:46,019 - #2 (
+INFO  22:55:46,019 - #37 0
+INFO  22:55:46,019 - #3 )
+INFO  22:55:46,020 - #17 ;
+INFO  22:55:46,020 - #7 }
+INFO  22:55:46,020 - #7 }
+INFO  22:55:46,027 - Deklarisana promenljiva niz na liniji 4
+INFO  22:55:46,027 - Deklarisana promenljiva nizch na liniji 5
+INFO  22:55:46,027 - Obradjuje se funkcija main na liniji 8
+INFO  22:55:46,027 - Deklarisana promenljiva a na liniji 9
+INFO  22:55:46,027 - Deklarisana promenljiva b na liniji 9
+INFO  22:55:46,027 - Deklarisana promenljiva c na liniji 9
+INFO  22:55:46,027 - Deklarisana promenljiva d na liniji 9
+INFO  22:55:46,027 - Deklarisana promenljiva A na liniji 10
+INFO  22:55:46,027 - Deklarisana promenljiva B na liniji 10
+INFO  22:55:46,028 - Deklarisana promenljiva C na liniji 10
+INFO  22:55:46,028 - Deklarisana promenljiva D na liniji 10
+INFO  22:55:46,028 - Deklarisana promenljiva boolVar na liniji 11
+INFO  22:55:46,029 - Print calls = 3
+ERROR 22:55:46,030 - Parsiranje NIJE uspesno zavrseno!

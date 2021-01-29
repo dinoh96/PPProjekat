@@ -1,0 +1,99 @@
+INFO  21:50:16,404 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  21:50:16,472 - #8 program
+INFO  21:50:16,472 - #38 test301
+INFO  21:50:16,473 - #38 int
+INFO  21:50:16,474 - #38 niz
+INFO  21:50:16,475 - #4 [
+INFO  21:50:16,475 - #5 ]
+INFO  21:50:16,475 - #17 ;
+INFO  21:50:16,478 - #38 char
+INFO  21:50:16,479 - #38 nizch
+INFO  21:50:16,479 - #4 [
+INFO  21:50:16,479 - #5 ]
+INFO  21:50:16,479 - #17 ;
+INFO  21:50:16,479 - #6 {
+INFO  21:50:16,479 - #15 void
+INFO  21:50:16,480 - #38 main
+INFO  21:50:16,480 - #2 (
+INFO  21:50:16,480 - #3 )
+INFO  21:50:16,481 - #38 int
+INFO  21:50:16,481 - #38 a
+INFO  21:50:16,482 - #19 ,
+INFO  21:50:16,496 - #38 b
+INFO  21:50:16,496 - #19 ,
+INFO  21:50:16,496 - #38 c
+INFO  21:50:16,497 - #19 ,
+INFO  21:50:16,497 - #38 d
+INFO  21:50:16,497 - #17 ;
+INFO  21:50:16,497 - #38 char
+INFO  21:50:16,497 - #38 A
+INFO  21:50:16,497 - #19 ,
+INFO  21:50:16,497 - #38 B
+INFO  21:50:16,498 - #19 ,
+INFO  21:50:16,498 - #38 C
+INFO  21:50:16,498 - #19 ,
+INFO  21:50:16,498 - #38 D
+INFO  21:50:16,498 - #17 ;
+INFO  21:50:16,498 - #6 {
+INFO  21:50:16,498 - #38 a
+INFO  21:50:16,499 - #21 =
+INFO  21:50:16,499 - #37 1
+INFO  21:50:16,500 - #17 ;
+INFO  21:50:16,502 - #38 b
+INFO  21:50:16,502 - #21 =
+INFO  21:50:16,503 - #37 2
+INFO  21:50:16,503 - #17 ;
+INFO  21:50:16,503 - #38 c
+INFO  21:50:16,503 - #21 =
+INFO  21:50:16,503 - #37 3
+INFO  21:50:16,503 - #17 ;
+INFO  21:50:16,503 - #38 d
+INFO  21:50:16,504 - #21 =
+INFO  21:50:16,504 - #37 4
+INFO  21:50:16,504 - #17 ;
+INFO  21:50:16,504 - #38 A
+INFO  21:50:16,504 - #21 =
+INFO  21:50:16,504 - #40 A
+INFO  21:50:16,505 - #17 ;
+INFO  21:50:16,505 - #38 B
+INFO  21:50:16,505 - #21 =
+INFO  21:50:16,505 - #40 b
+INFO  21:50:16,505 - #17 ;
+INFO  21:50:16,505 - #38 C
+INFO  21:50:16,506 - #21 =
+INFO  21:50:16,506 - #40 C
+INFO  21:50:16,506 - #17 ;
+INFO  21:50:16,506 - #38 D
+INFO  21:50:16,506 - #21 =
+INFO  21:50:16,506 - #40 d
+INFO  21:50:16,506 - #17 ;
+INFO  21:50:16,506 - #41 if
+INFO  21:50:16,507 - #2 (
+INFO  21:50:16,508 - #38 a
+INFO  21:50:16,508 - #31 ==
+INFO  21:50:16,508 - #38 b
+INFO  21:50:16,510 - #3 )
+INFO  21:50:16,513 - #42 else
+ERROR 21:50:16,514 - 
+Sintaksna greska na liniji 24
+INFO  21:50:16,514 - #10 print
+INFO  21:50:16,514 - #2 (
+INFO  21:50:16,514 - #37 0
+INFO  21:50:16,514 - #3 )
+INFO  21:50:16,514 - #17 ;
+INFO  21:50:16,515 - #7 }
+INFO  21:50:16,515 - #7 }
+ERROR 21:50:16,515 - Izvrsen oporavak do ; u liniji 23
+INFO  21:50:16,526 - Deklarisana promenljiva niz na liniji 4
+INFO  21:50:16,526 - Deklarisana promenljiva nizch na liniji 5
+INFO  21:50:16,526 - Obradjuje se funkcija main na liniji 8
+INFO  21:50:16,526 - Deklarisana promenljiva a na liniji 9
+INFO  21:50:16,526 - Deklarisana promenljiva b na liniji 9
+INFO  21:50:16,527 - Deklarisana promenljiva c na liniji 9
+INFO  21:50:16,527 - Deklarisana promenljiva d na liniji 9
+INFO  21:50:16,527 - Deklarisana promenljiva A na liniji 10
+INFO  21:50:16,527 - Deklarisana promenljiva B na liniji 10
+INFO  21:50:16,527 - Deklarisana promenljiva C na liniji 10
+INFO  21:50:16,527 - Deklarisana promenljiva D na liniji 10
+INFO  21:50:16,527 - Print calls = 0
+ERROR 21:50:16,528 - Parsiranje NIJE uspesno zavrseno!

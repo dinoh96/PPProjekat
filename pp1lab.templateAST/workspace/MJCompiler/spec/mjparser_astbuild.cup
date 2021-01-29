@@ -137,7 +137,9 @@ ListOfConstants ::= (MultipleConstants) ListOfConstants:L1 COMMA ConstNode:C2 {:
 					| (SingleConstant) ConstNode:C1 {: RESULT=new SingleConstant(C1); RESULT.setLine(C1left); :}
 					;
 					
-ConstNode ::= (ConstNode) IDENT:constName ASSIGN ConstantVars:C1 {: RESULT=new ConstNode(constName, C1); RESULT.setLine(constNameleft); :}
+ConstNode ::= (ConstantNode) IDENT:constName ASSIGN ConstantVars:C1 {: RESULT=new ConstantNode(constName, C1); RESULT.setLine(constNameleft); :}
+				| (ErrorConstNodeComma) error:e
+				{: parser.report_error("Izvrsen oporavak do , ili ; u liniji " + eleft, null); :} {: RESULT=new ErrorConstNodeComma(); :}
 ;
 
 ListOfVariables ::= (MultipleVariables) ListOfVariables:L1 COMMA VarNode:V2 {: RESULT=new MultipleVariables(L1, V2); RESULT.setLine(L1left); :}
@@ -174,7 +176,10 @@ FormalParamList ::= (FormalParamDecls) FormalParamList:F1 COMMA FormalParamDecl:
 					| (SingleFormalParamDecl) FormalParamDecl:F1 {: RESULT=new SingleFormalParamDecl(F1); RESULT.setLine(F1left); :}
 					;
 					
-FormalParamDecl ::= (FormalParamDecl) Type:T1 IDENT:name ArrayVarNode:A2 {: RESULT=new FormalParamDecl(T1, name, A2); RESULT.setLine(T1left); :}
+FormalParamDecl ::= (FormalParameterDecl) Type:T1 IDENT:name ArrayVarNode:A2 {: RESULT=new FormalParameterDecl(T1, name, A2); RESULT.setLine(T1left); :}
+					| (FormalParamDeclError) error:e
+					{: parser.report_error("Izvrsen oporavak do , ili ) u liniji " + eleft, null); :} {: RESULT=new FormalParamDeclError(); :}
+
 ;
 
 StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new Statements(S1, S2); RESULT.setLine(S1left); :} 
@@ -197,7 +202,10 @@ Unmatched ::= (UnmatchedIf) IfKeyWord:I1 IfCondition:I2 Statement:S3 {: RESULT=n
 				| (UnmatchedIfElse) IfKeyWord:I1 IfCondition:I2 Matched:M3 ElseKeyWord:E4 Unmatched:U5 {: RESULT=new UnmatchedIfElse(I1, I2, M3, E4, U5); RESULT.setLine(I1left); :}
 				;
 
-IfCondition ::= (IfCondition) LROUND Condition:C1 RROUND {: RESULT=new IfCondition(C1); RESULT.setLine(C1left); :}
+IfCondition ::= (IfCond) LROUND Condition:C1 RROUND {: RESULT=new IfCond(C1); RESULT.setLine(C1left); :}
+				| (IfConditionError) error:e
+				{: parser.report_error("Izvrsen oporavak do ) u liniji " + eleft, null); :} {: RESULT=new IfConditionError(); :}
+				
 ;
 				  
 Matched ::= (DesignatorStmt) DesignatorStatement:dest SEMI {: RESULT=new DesignatorStmt(dest); RESULT.setLine(destleft); :} 

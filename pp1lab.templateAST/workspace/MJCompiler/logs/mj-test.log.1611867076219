@@ -1,0 +1,102 @@
+INFO  21:50:49,943 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  21:50:50,039 - #8 program
+INFO  21:50:50,040 - #38 test301
+INFO  21:50:50,040 - #38 int
+INFO  21:50:50,042 - #38 niz
+INFO  21:50:50,043 - #4 [
+INFO  21:50:50,043 - #5 ]
+INFO  21:50:50,043 - #17 ;
+INFO  21:50:50,046 - #38 char
+INFO  21:50:50,047 - #38 nizch
+INFO  21:50:50,047 - #4 [
+INFO  21:50:50,048 - #5 ]
+INFO  21:50:50,048 - #17 ;
+INFO  21:50:50,048 - #6 {
+INFO  21:50:50,048 - #15 void
+INFO  21:50:50,049 - #38 main
+INFO  21:50:50,049 - #2 (
+INFO  21:50:50,049 - #3 )
+INFO  21:50:50,050 - #38 int
+INFO  21:50:50,052 - #38 a
+INFO  21:50:50,052 - #19 ,
+INFO  21:50:50,065 - #38 b
+INFO  21:50:50,065 - #19 ,
+INFO  21:50:50,065 - #38 c
+INFO  21:50:50,065 - #19 ,
+INFO  21:50:50,065 - #38 d
+INFO  21:50:50,066 - #17 ;
+INFO  21:50:50,066 - #38 char
+INFO  21:50:50,066 - #38 A
+INFO  21:50:50,066 - #19 ,
+INFO  21:50:50,066 - #38 B
+INFO  21:50:50,067 - #19 ,
+INFO  21:50:50,067 - #38 C
+INFO  21:50:50,067 - #19 ,
+INFO  21:50:50,067 - #38 D
+INFO  21:50:50,067 - #17 ;
+INFO  21:50:50,067 - #6 {
+INFO  21:50:50,067 - #38 a
+INFO  21:50:50,069 - #21 =
+INFO  21:50:50,070 - #37 1
+INFO  21:50:50,071 - #17 ;
+INFO  21:50:50,075 - #38 b
+INFO  21:50:50,076 - #21 =
+INFO  21:50:50,076 - #37 2
+INFO  21:50:50,076 - #17 ;
+INFO  21:50:50,077 - #38 c
+INFO  21:50:50,077 - #21 =
+INFO  21:50:50,077 - #37 3
+INFO  21:50:50,077 - #17 ;
+INFO  21:50:50,077 - #38 d
+INFO  21:50:50,077 - #21 =
+INFO  21:50:50,078 - #37 4
+INFO  21:50:50,078 - #17 ;
+INFO  21:50:50,078 - #38 A
+INFO  21:50:50,078 - #21 =
+INFO  21:50:50,078 - #40 A
+INFO  21:50:50,078 - #17 ;
+INFO  21:50:50,079 - #38 B
+INFO  21:50:50,079 - #21 =
+INFO  21:50:50,079 - #40 b
+INFO  21:50:50,079 - #17 ;
+INFO  21:50:50,079 - #38 C
+INFO  21:50:50,079 - #21 =
+INFO  21:50:50,079 - #40 C
+INFO  21:50:50,080 - #17 ;
+INFO  21:50:50,080 - #38 D
+INFO  21:50:50,080 - #21 =
+INFO  21:50:50,080 - #40 d
+INFO  21:50:50,080 - #17 ;
+INFO  21:50:50,080 - #41 if
+INFO  21:50:50,080 - #2 (
+INFO  21:50:50,082 - #38 a
+INFO  21:50:50,082 - #31 ==
+INFO  21:50:50,082 - #38 b
+INFO  21:50:50,084 - #3 )
+INFO  21:50:50,088 - #10 print
+INFO  21:50:50,089 - #2 (
+INFO  21:50:50,089 - #39 true
+INFO  21:50:50,089 - #3 )
+INFO  21:50:50,091 - #17 ;
+INFO  21:50:50,091 - #42 else
+INFO  21:50:50,091 - #10 print
+INFO  21:50:50,092 - #2 (
+INFO  21:50:50,092 - #37 0
+INFO  21:50:50,092 - #3 )
+INFO  21:50:50,092 - #17 ;
+INFO  21:50:50,092 - #7 }
+INFO  21:50:50,093 - #7 }
+INFO  21:50:50,103 - Deklarisana promenljiva niz na liniji 4
+INFO  21:50:50,103 - Deklarisana promenljiva nizch na liniji 5
+INFO  21:50:50,103 - Obradjuje se funkcija main na liniji 8
+INFO  21:50:50,103 - Deklarisana promenljiva a na liniji 9
+INFO  21:50:50,103 - Deklarisana promenljiva b na liniji 9
+INFO  21:50:50,103 - Deklarisana promenljiva c na liniji 9
+INFO  21:50:50,103 - Deklarisana promenljiva d na liniji 9
+INFO  21:50:50,104 - Deklarisana promenljiva A na liniji 10
+INFO  21:50:50,104 - Deklarisana promenljiva B na liniji 10
+INFO  21:50:50,104 - Deklarisana promenljiva C na liniji 10
+INFO  21:50:50,104 - Deklarisana promenljiva D na liniji 10
+INFO  21:50:50,104 - Print calls = 2
+INFO  21:50:50,105 - Generating bytecode file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  21:50:50,119 - Parsiranje uspesno zavrseno!

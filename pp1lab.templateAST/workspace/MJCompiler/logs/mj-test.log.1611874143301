@@ -1,0 +1,23 @@
+INFO  23:48:46,119 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  23:48:46,166 - #8 program
+INFO  23:48:46,166 - #38 test301
+INFO  23:48:46,166 - #38 int
+INFO  23:48:46,167 - #38 niz
+INFO  23:48:46,167 - #4 [
+INFO  23:48:46,167 - #5 ]
+INFO  23:48:46,168 - #17 ;
+INFO  23:48:46,169 - #38 char
+INFO  23:48:46,170 - #38 nizch
+INFO  23:48:46,170 - #4 [
+INFO  23:48:46,170 - #5 ]
+INFO  23:48:46,170 - #17 ;
+INFO  23:48:46,170 - #16 const
+INFO  23:48:46,170 - #38 bla
+INFO  23:48:46,170 - #21 =
+ERROR 23:48:46,170 - 
+Sintaksna greska na liniji 6
+ERROR 23:48:46,171 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6
+INFO  23:48:46,176 - Deklarisana promenljiva niz na liniji 4
+INFO  23:48:46,188 - Deklarisana promenljiva nizch na liniji 5
+INFO  23:48:46,189 - Print calls = 0
+ERROR 23:48:46,190 - Parsiranje NIJE uspesno zavrseno!

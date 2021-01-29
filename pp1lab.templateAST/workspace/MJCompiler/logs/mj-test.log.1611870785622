@@ -1,0 +1,125 @@
+INFO  22:52:31,074 - Compiling source file: C:\Users\v-dihadz\Desktop\PP1 Projekti\Dino 2k21\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:52:31,124 - #8 program
+INFO  22:52:31,124 - #38 test301
+INFO  22:52:31,124 - #38 int
+INFO  22:52:31,125 - #38 niz
+INFO  22:52:31,126 - #4 [
+INFO  22:52:31,126 - #5 ]
+INFO  22:52:31,126 - #17 ;
+INFO  22:52:31,130 - #38 char
+INFO  22:52:31,131 - #38 nizch
+INFO  22:52:31,131 - #4 [
+INFO  22:52:31,132 - #5 ]
+INFO  22:52:31,132 - #17 ;
+INFO  22:52:31,132 - #6 {
+INFO  22:52:31,132 - #15 void
+INFO  22:52:31,133 - #38 main
+INFO  22:52:31,133 - #2 (
+INFO  22:52:31,133 - #3 )
+INFO  22:52:31,133 - #38 int
+INFO  22:52:31,134 - #38 a
+INFO  22:52:31,134 - #19 ,
+INFO  22:52:31,137 - #38 b
+INFO  22:52:31,137 - #19 ,
+INFO  22:52:31,137 - #38 c
+INFO  22:52:31,137 - #19 ,
+INFO  22:52:31,137 - #38 d
+INFO  22:52:31,137 - #17 ;
+INFO  22:52:31,137 - #38 char
+INFO  22:52:31,137 - #38 A
+INFO  22:52:31,138 - #19 ,
+INFO  22:52:31,138 - #38 B
+INFO  22:52:31,138 - #19 ,
+INFO  22:52:31,138 - #38 C
+INFO  22:52:31,138 - #19 ,
+INFO  22:52:31,138 - #38 D
+INFO  22:52:31,138 - #17 ;
+INFO  22:52:31,138 - #38 bool
+INFO  22:52:31,138 - #38 boolVar
+INFO  22:52:31,138 - #17 ;
+INFO  22:52:31,139 - #6 {
+INFO  22:52:31,139 - #38 a
+INFO  22:52:31,140 - #21 =
+INFO  22:52:31,140 - #37 1
+INFO  22:52:31,140 - #17 ;
+INFO  22:52:31,144 - #38 b
+INFO  22:52:31,144 - #21 =
+INFO  22:52:31,145 - #37 2
+INFO  22:52:31,145 - #17 ;
+INFO  22:52:31,145 - #38 c
+INFO  22:52:31,145 - #21 =
+INFO  22:52:31,145 - #37 3
+INFO  22:52:31,145 - #17 ;
+INFO  22:52:31,145 - #38 d
+INFO  22:52:31,146 - #21 =
+INFO  22:52:31,146 - #37 4
+INFO  22:52:31,146 - #17 ;
+INFO  22:52:31,146 - #38 A
+INFO  22:52:31,146 - #21 =
+INFO  22:52:31,146 - #40 A
+INFO  22:52:31,147 - #17 ;
+INFO  22:52:31,147 - #38 B
+INFO  22:52:31,147 - #21 =
+INFO  22:52:31,147 - #40 b
+INFO  22:52:31,147 - #17 ;
+INFO  22:52:31,147 - #38 C
+INFO  22:52:31,147 - #21 =
+INFO  22:52:31,148 - #40 C
+INFO  22:52:31,148 - #17 ;
+INFO  22:52:31,148 - #38 D
+INFO  22:52:31,148 - #21 =
+INFO  22:52:31,148 - #40 d
+INFO  22:52:31,148 - #17 ;
+INFO  22:52:31,148 - #38 boolVar
+INFO  22:52:31,148 - #21 =
+INFO  22:52:31,148 - #39 false
+INFO  22:52:31,148 - #17 ;
+INFO  22:52:31,149 - #10 print
+INFO  22:52:31,149 - #2 (
+INFO  22:52:31,149 - #38 a
+INFO  22:52:31,149 - #31 ==
+INFO  22:52:31,149 - #38 b
+INFO  22:52:31,150 - #20 ?
+INFO  22:52:31,152 - #37 1
+INFO  22:52:31,152 - #18 :
+INFO  22:52:31,152 - #37 0
+INFO  22:52:31,153 - #3 )
+INFO  22:52:31,154 - #17 ;
+INFO  22:52:31,154 - #41 if
+INFO  22:52:31,155 - #2 (
+INFO  22:52:31,155 - #38 a
+INFO  22:52:31,155 - #32 !=
+INFO  22:52:31,155 - #38 b
+INFO  22:52:31,156 - #3 )
+INFO  22:52:31,156 - #10 print
+INFO  22:52:31,156 - #2 (
+INFO  22:52:31,156 - #13 new
+INFO  22:52:31,157 - #38 int
+INFO  22:52:31,157 - #4 [
+INFO  22:52:31,157 - #37 3
+INFO  22:52:31,157 - #5 ]
+INFO  22:52:31,157 - #3 )
+INFO  22:52:31,161 - #17 ;
+INFO  22:52:31,162 - #42 else
+INFO  22:52:31,162 - #10 print
+INFO  22:52:31,162 - #2 (
+INFO  22:52:31,162 - #37 0
+INFO  22:52:31,162 - #3 )
+INFO  22:52:31,162 - #17 ;
+INFO  22:52:31,163 - #7 }
+INFO  22:52:31,163 - #7 }
+INFO  22:52:31,169 - Deklarisana promenljiva niz na liniji 4
+INFO  22:52:31,170 - Deklarisana promenljiva nizch na liniji 5
+INFO  22:52:31,170 - Obradjuje se funkcija main na liniji 8
+INFO  22:52:31,170 - Deklarisana promenljiva a na liniji 9
+INFO  22:52:31,170 - Deklarisana promenljiva b na liniji 9
+INFO  22:52:31,170 - Deklarisana promenljiva c na liniji 9
+INFO  22:52:31,170 - Deklarisana promenljiva d na liniji 9
+INFO  22:52:31,170 - Deklarisana promenljiva A na liniji 10
+INFO  22:52:31,170 - Deklarisana promenljiva B na liniji 10
+INFO  22:52:31,170 - Deklarisana promenljiva C na liniji 10
+INFO  22:52:31,171 - Deklarisana promenljiva D na liniji 10
+INFO  22:52:31,171 - Deklarisana promenljiva boolVar na liniji 11
+ERROR 22:52:31,174 - Semanticka greska na liniji 26 : Nije dozvoljeno kreiranje nizova u print naredbi
+INFO  22:52:31,174 - Print calls = 3
+ERROR 22:52:31,175 - Parsiranje NIJE uspesno zavrseno!

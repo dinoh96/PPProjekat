@@ -15,9 +15,9 @@ public class RunTest{
 		disasm disasm = new disasm();
 		String[] parserArgs = {arg[1], arg[2]};
 		
-		boolean doDebug = true;
+		boolean doDebug = false;
 		boolean doNoDebug = true;
-		boolean doDisasm = true;
+		boolean doDisasm = false;
 		
 		try {
 			mjParserTest.main(parserArgs);
