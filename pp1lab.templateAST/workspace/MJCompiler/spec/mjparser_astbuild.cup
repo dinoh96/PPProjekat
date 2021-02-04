@@ -298,7 +298,7 @@ FactorActPars ::= (YesFactorActPars) ActPars:A1 {: RESULT=new YesFactorActPars(A
 					| (NoFactorActPars) {: RESULT=new NoFactorActPars(); :} /* epsilon */
 					;
 
-ActPars ::= (ExprWithActPars) Expr:E1 ActParsList:A2 {: RESULT=new ExprWithActPars(E1, A2); RESULT.setLine(E1left); :}
+ActPars ::= (ActPars) Expr:E1 ActParsList:A2 {: RESULT=new ActPars(E1, A2); RESULT.setLine(E1left); :}
 ;
 
 ActParsList ::= (YesActParsList) COMMA Expr:E1 ActParsList:A2 {: RESULT=new YesActParsList(E1, A2); RESULT.setLine(E1left); :}

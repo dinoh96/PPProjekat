@@ -268,7 +268,7 @@ FactorActPars ::= (YesFactorActPars) ActPars
 					| (NoFactorActPars) /* epsilon */
 					;
 
-ActPars ::= (ExprWithActPars) Expr ActParsList
+ActPars ::= (ActPars) Expr ActParsList
 ;
 
 ActParsList ::= (YesActParsList) COMMA Expr ActParsList

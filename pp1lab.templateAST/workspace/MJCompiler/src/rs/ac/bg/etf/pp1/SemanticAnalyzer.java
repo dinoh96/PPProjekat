@@ -40,7 +40,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	boolean returnFound = false;
 	int nVars;
 	
-	// My humble contribution to this charade 
+
 	
 	//mikrojava_2020_2021_jan.pdf -> A.5 Implementaciona ogranicenja (strana 8 od 15)
 	public static final int MAX_NUMBER_OF_LOCAL_VARS = 256;
@@ -330,7 +330,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			
 			if (funcCall.getFactorActPars() instanceof YesFactorActPars) {
 				// ima parametera i ubacujemo ih u listu onim redom koji se pojavljuju
-				ExprWithActPars actPars = (ExprWithActPars)((YesFactorActPars) funcCall.getFactorActPars()).getActPars();
+				ActPars actPars = (ActPars)((YesFactorActPars) funcCall.getFactorActPars()).getActPars();
 				listActualParameters.add(actPars.getExpr());
 				
 				ActParsList actParsList = actPars.getActParsList();
@@ -379,7 +379,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			
 			if (procCall.getDesignatorActPars() instanceof YesDesignatorActPars) {
 				// ima parametera i ubacujemo ih u listu onim redom koji se pojavljuju
-				ExprWithActPars actPars = (ExprWithActPars)((YesDesignatorActPars) procCall.getDesignatorActPars()).getActPars();
+				ActPars actPars = (ActPars)((YesDesignatorActPars) procCall.getDesignatorActPars()).getActPars();
 				listActualParameters.add(actPars.getExpr());
 				
 				ActParsList actParsList = actPars.getActParsList();

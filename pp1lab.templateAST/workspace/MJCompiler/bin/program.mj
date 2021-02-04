@@ -28,7 +28,7 @@ program test301
 		
 		//if (a || b) print(1);
 		
-		print (a + b  < c + d ? a : b);
+		print (boolVar ? a : b);
 		
 		niz = new int[a + b];
 		
@@ -37,8 +37,7 @@ program test301
 		print(len(niz));
 		
 		boolVar = false;
-		print(a == b ? 1 : 0);
-		if (a != b) print(1);
+		if (a == b) print(1);
 		else print(0);
 		
 	}
