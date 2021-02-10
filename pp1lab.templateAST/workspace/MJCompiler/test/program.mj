@@ -23,9 +23,7 @@ program test
 		B = 'b';
 		C = 'C';
 		D = 'd';
-		
-		if (a || b) print(1);
-		
+	
 		print (boolVar ? a : b);
 		
 		niz = new int[a + b];
