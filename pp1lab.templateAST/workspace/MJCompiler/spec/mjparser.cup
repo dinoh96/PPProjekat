@@ -70,7 +70,7 @@ nonterminal ActPars, Addop, CondTerm, Condition, DesignatorActPars, DesignatorSt
 nonterminal FactorActPars, FormPars, FormalParamDecl, FormalParamList, IfCondition, Matched, MethodDeclList, Mulop, PrintAddition;
 nonterminal Relop, ReturnExpr, Statement, StatementList, Unmatched, VarDecl, ConstDecl;
 nonterminal MulopFactor, OrCondTerm, AndCondFact, ActParsList, ListOfVariables, ListOfConstants;
-nonterminal ArrayVarNode, DoKeyWord, IfKeyWord, WhileKeyWord, ElseKeyWord, QMark, Colon;
+nonterminal ArrayVarNode, DoKeyWord, IfKeyWord, WhileKeyWord, ElseKeyWord, QMark, Colon, CommaOrSemi;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, DesignatorArrayName, MethodDecl, MethodTypeName; 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, GlobalVarDeclList, VarOrConstDeclList, VarDeclList, Expression, NonTernaryExpression, TernaryExpression; 
@@ -101,6 +101,7 @@ ConstDecl ::= (ConstDecl) CONST Type ListOfConstants SEMI
 ;
 			
 VarDecl ::= (VarDecl) Type ListOfVariables SEMI 
+
 ;
 
 ListOfConstants ::= (MultipleConstants) ListOfConstants COMMA ConstNode
@@ -109,11 +110,17 @@ ListOfConstants ::= (MultipleConstants) ListOfConstants COMMA ConstNode
 					
 ConstNode ::= (ConstantNode) IDENT:constName ASSIGN ConstantVars
 				| (ErrorConstNodeComma) error:e
-				{: parser.report_error("Izvrsen oporavak do , ili ; u liniji " + eleft, null); :}
+				{: parser.report_error("Izvrsen oporavak do , ili ; u liniji " + eleft + ": greska pri definisanju globalne konstante", null); :}
 ;
+
+CommaOrSemi ::= (Comma) COMMA:l
+				| (Semi) SEMI:l
+				;
 
 ListOfVariables ::= (MultipleVariables) ListOfVariables COMMA VarNode
 					| (SingleVariable) VarNode
+					| (ErrorListOfVariables) error:e
+					{: parser.report_error("Izvrsen oporavak do , ili ; u liniji " + eleft + ": greska pri definisanju globalne promenljive", null); :}
 					;
 
 VarNode ::= (VarNode) IDENT:varName ArrayVarNode
@@ -144,11 +151,11 @@ FormPars ::= (FormParams) FormalParamList
 
 FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
 					| (SingleFormalParamDecl) FormalParamDecl
+					| (FormalParamListError) error:e 
+					{: parser.report_error("Izvrsen oporavak do , ili ) u liniji " + eleft + ": greska pri deklaraciji formalnog parametra funkcije", null); :}
 					;
 					
-FormalParamDecl ::= (FormalParameterDecl) Type IDENT:name ArrayVarNode
-					| (FormalParamDeclError) error:e
-					{: parser.report_error("Izvrsen oporavak do , ili ) u liniji " + eleft, null); :}
+FormalParamDecl ::= (FormalParamDecl) Type IDENT:name ArrayVarNode
 
 ;
 
@@ -174,7 +181,7 @@ Unmatched ::= (UnmatchedIf) IfKeyWord IfCondition Statement
 
 IfCondition ::= (IfCond) LROUND Condition RROUND
 				| (IfConditionError) error:e
-				{: parser.report_error("Izvrsen oporavak do ) u liniji " + eleft, null); :}
+				{: parser.report_error("Izvrsen oporavak do ) u liniji " + eleft + ": neispravan uslov u IF naredbi", null); :}
 				
 ;
 				  
@@ -186,8 +193,6 @@ Matched ::= (DesignatorStmt) DesignatorStatement:dest SEMI
 			| (ContinueStmt) CONTINUE SEMI
 			| (MatchedIf) IfKeyWord IfCondition Matched ElseKeyWord Matched
 			| (DoWhile) DoKeyWord Statement WhileKeyWord LROUND Condition RROUND SEMI
-			| (ErrorStmt)error SEMI:l
-			{: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}
 			| (BlockStatement) LCURLY StatementList RCURLY
 			;
 
@@ -224,6 +229,8 @@ Relop ::= (Equals) EQ
 			;
 
 DesignatorStatement ::= (DesignatorAssignment) Designator ASSIGN Expr
+						| (ErrorAssignment) error:e
+						{: parser.report_error("Izvrsen oporavak do ; u liniji " + eleft + ": neispravan uslov dodele", null); :}
 						| (DesignatorIncrement) Designator INC
 						| (DesignatorDecrement) Designator DEC
 						| (ProcCall) Designator LROUND DesignatorActPars RROUND

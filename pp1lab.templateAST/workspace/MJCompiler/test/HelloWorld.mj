@@ -1,4 +1,4 @@
-// 
+//test/HelloWorld.mj
 
 program HelloWorld
 	int size;
@@ -6,6 +6,8 @@ program HelloWorld
 {
 	void main()	
 		int i;
+		int j;
+		bool doneIteration;
 	{
 		size = 12;
 		nizch = new char[size];
@@ -23,11 +25,36 @@ program HelloWorld
 		nizch[10] = 'd';
 		nizch[11] = '!';
 		
-		i = 0;
+		j = 0;
+		doneIteration = false;
 		do{
-			print(nizch[i]);
-			i++;
-		}while(i < size);
+			j = j + (doneIteration ? -1 : 1);
+			i = 0;
+			do{
+				print(' ');
+				i++;
+			}while(i < size+1-j);
+			
+			i = 0;
+			do{
+				print(nizch[j-i-1]);
+				i++;
+			}while(i < j);
+			
+			print(' ');
+			print('|');
+			print(' ');
+			
+			i = 0;
+			do{
+				print(nizch[i]);
+				i++;
+			}while(i < j);
+			
+			print(eol);
+			if (j == size) doneIteration = true;
+			if (doneIteration && j <= 1) break;
+		}while(j>0);
 	}
 }
 

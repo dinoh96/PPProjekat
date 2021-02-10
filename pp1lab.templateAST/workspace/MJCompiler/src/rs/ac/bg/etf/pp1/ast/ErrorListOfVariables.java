@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/1/2021 22:30:28
+// 10/1/2021 1:50:1
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ErrorStmt extends Matched {
+public class ErrorListOfVariables extends ListOfVariables {
 
-    public ErrorStmt () {
+    public ErrorListOfVariables () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class ErrorStmt extends Matched {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ErrorStmt(\n");
+        buffer.append("ErrorListOfVariables(\n");
 
         buffer.append(tab);
-        buffer.append(") [ErrorStmt]");
+        buffer.append(") [ErrorListOfVariables]");
         return buffer.toString();
     }
 }

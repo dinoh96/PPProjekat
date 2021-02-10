@@ -101,10 +101,10 @@ nonterminal WhileKeyWord WhileKeyWord;
 nonterminal ElseKeyWord ElseKeyWord;
 nonterminal QMark QMark;
 nonterminal Colon Colon;
+nonterminal CommaOrSemi CommaOrSemi;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, DesignatorArrayName, MethodDecl, MethodTypeName; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, GlobalVarDeclList, VarOrConstDeclList, VarDeclList; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, TernaryExpression, NonTernaryExpression, MinusExpr, AddopTerm;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, GlobalVarDeclList, VarOrConstDeclList, VarDeclList, Expression, NonTernaryExpression, TernaryExpression; 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct CondFact, ConstNode, VarNode;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ConstantVars;
 
@@ -132,6 +132,7 @@ ConstDecl ::= (ConstDecl) CONST Type:T1 ListOfConstants:L2 SEMI {: RESULT=new Co
 ;
 			
 VarDecl ::= (VarDecl) Type:T1 ListOfVariables:L2 SEMI {: RESULT=new VarDecl(T1, L2); RESULT.setLine(T1left); :} 
+
 ;
 
 ListOfConstants ::= (MultipleConstants) ListOfConstants:L1 COMMA ConstNode:C2 {: RESULT=new MultipleConstants(L1, C2); RESULT.setLine(L1left); :}
@@ -140,11 +141,17 @@ ListOfConstants ::= (MultipleConstants) ListOfConstants:L1 COMMA ConstNode:C2 {:
 					
 ConstNode ::= (ConstantNode) IDENT:constName ASSIGN ConstantVars:C1 {: RESULT=new ConstantNode(constName, C1); RESULT.setLine(constNameleft); :}
 				| (ErrorConstNodeComma) error:e
-				{: parser.report_error("Izvrsen oporavak do , ili ; u liniji " + eleft, null); :} {: RESULT=new ErrorConstNodeComma(); :}
+				{: parser.report_error("Izvrsen oporavak do , ili ; u liniji " + eleft + ": greska pri definisanju globalne konstante", null); :} {: RESULT=new ErrorConstNodeComma(); :}
 ;
+
+CommaOrSemi ::= (Comma) COMMA:l {: RESULT=new Comma(); :}
+				| (Semi) SEMI:l {: RESULT=new Semi(); :}
+				;
 
 ListOfVariables ::= (MultipleVariables) ListOfVariables:L1 COMMA VarNode:V2 {: RESULT=new MultipleVariables(L1, V2); RESULT.setLine(L1left); :}
 					| (SingleVariable) VarNode:V1 {: RESULT=new SingleVariable(V1); RESULT.setLine(V1left); :}
+					| (ErrorListOfVariables) error:e
+					{: parser.report_error("Izvrsen oporavak do , ili ; u liniji " + eleft + ": greska pri definisanju globalne promenljive", null); :} {: RESULT=new ErrorListOfVariables(); :}
 					;
 
 VarNode ::= (VarNode) IDENT:varName ArrayVarNode:A1 {: RESULT=new VarNode(varName, A1); RESULT.setLine(varNameleft); :}
@@ -175,11 +182,11 @@ FormPars ::= (FormParams) FormalParamList:F1 {: RESULT=new FormParams(F1); RESUL
 
 FormalParamList ::= (FormalParamDecls) FormalParamList:F1 COMMA FormalParamDecl:F2 {: RESULT=new FormalParamDecls(F1, F2); RESULT.setLine(F1left); :}
 					| (SingleFormalParamDecl) FormalParamDecl:F1 {: RESULT=new SingleFormalParamDecl(F1); RESULT.setLine(F1left); :}
+					| (FormalParamListError) error:e 
+					{: parser.report_error("Izvrsen oporavak do , ili ) u liniji " + eleft + ": greska pri deklaraciji formalnog parametra funkcije", null); :} {: RESULT=new FormalParamListError(); :}
 					;
 					
-FormalParamDecl ::= (FormalParameterDecl) Type:T1 IDENT:name ArrayVarNode:A2 {: RESULT=new FormalParameterDecl(T1, name, A2); RESULT.setLine(T1left); :}
-					| (FormalParamDeclError) error:e
-					{: parser.report_error("Izvrsen oporavak do , ili ) u liniji " + eleft, null); :} {: RESULT=new FormalParamDeclError(); :}
+FormalParamDecl ::= (FormalParamDecl) Type:T1 IDENT:name ArrayVarNode:A2 {: RESULT=new FormalParamDecl(T1, name, A2); RESULT.setLine(T1left); :}
 
 ;
 
@@ -205,7 +212,7 @@ Unmatched ::= (UnmatchedIf) IfKeyWord:I1 IfCondition:I2 Statement:S3 {: RESULT=n
 
 IfCondition ::= (IfCond) LROUND Condition:C1 RROUND {: RESULT=new IfCond(C1); RESULT.setLine(C1left); :}
 				| (IfConditionError) error:e
-				{: parser.report_error("Izvrsen oporavak do ) u liniji " + eleft, null); :} {: RESULT=new IfConditionError(); :}
+				{: parser.report_error("Izvrsen oporavak do ) u liniji " + eleft + ": neispravan uslov u IF naredbi", null); :} {: RESULT=new IfConditionError(); :}
 				
 ;
 				  
@@ -217,8 +224,6 @@ Matched ::= (DesignatorStmt) DesignatorStatement:dest SEMI {: RESULT=new Designa
 			| (ContinueStmt) CONTINUE SEMI {: RESULT=new ContinueStmt(); :}
 			| (MatchedIf) IfKeyWord:I1 IfCondition:I2 Matched:M3 ElseKeyWord:E4 Matched:M5 {: RESULT=new MatchedIf(I1, I2, M3, E4, M5); RESULT.setLine(I1left); :}
 			| (DoWhile) DoKeyWord:D1 Statement:S2 WhileKeyWord:W3 LROUND Condition:C4 RROUND SEMI {: RESULT=new DoWhile(D1, S2, W3, C4); RESULT.setLine(D1left); :}
-			| (ErrorStmt)error SEMI:l
-			{: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :} {: RESULT=new ErrorStmt(); :}
 			| (BlockStatement) LCURLY StatementList:S1 RCURLY {: RESULT=new BlockStatement(S1); RESULT.setLine(S1left); :}
 			;
 
@@ -255,6 +260,8 @@ Relop ::= (Equals) EQ {: RESULT=new Equals(); :}
 			;
 
 DesignatorStatement ::= (DesignatorAssignment) Designator:D1 ASSIGN Expr:E2 {: RESULT=new DesignatorAssignment(D1, E2); RESULT.setLine(D1left); :}
+						| (ErrorAssignment) error:e
+						{: parser.report_error("Izvrsen oporavak do ; u liniji " + eleft + ": neispravan uslov dodele", null); :} {: RESULT=new ErrorAssignment(); :}
 						| (DesignatorIncrement) Designator:D1 INC {: RESULT=new DesignatorIncrement(D1); RESULT.setLine(D1left); :}
 						| (DesignatorDecrement) Designator:D1 DEC {: RESULT=new DesignatorDecrement(D1); RESULT.setLine(D1left); :}
 						| (ProcCall) Designator:D1 LROUND DesignatorActPars:D2 RROUND {: RESULT=new ProcCall(D1, D2); RESULT.setLine(D1left); :}
@@ -267,26 +274,21 @@ DesignatorActPars ::= (YesDesignatorActPars) ActPars:A1 {: RESULT=new YesDesigna
 Expr ::= (NonTernaryExpr) NonTernaryExpression:N1 {: RESULT=new NonTernaryExpr(N1); RESULT.setLine(N1left); :}
 			| (TernaryExpr) TernaryExpression:T1 {: RESULT=new TernaryExpr(T1); RESULT.setLine(T1left); :}
 			;
-
-QMark ::= (QMark) QMARK {: RESULT=new QMark(); :}
-;
-
-Colon ::= (Colon) COLON {: RESULT=new Colon(); :}
-;
 			
 TernaryExpression ::= (TernaryExpression) Condition:cond QMark:Q1 Expr:e1 Colon:C2 Expr:e2 {: RESULT=new TernaryExpression(cond, Q1, e1, C2, e2); RESULT.setLine(condleft); :}
 ;
 
-NonTernaryExpression ::= (NonTernaryExpression) MinusExpr:M1 Term:t AddopTerm:A2 {: RESULT=new NonTernaryExpression(M1, t, A2); RESULT.setLine(M1left); :}
+QMark ::= (QMark) QMARK {: RESULT=new QMark(); :};
+
+Colon ::= (Colon) COLON {: RESULT=new Colon(); :};
+
+NonTernaryExpression ::= (NegativeExpr) MINUS Expression:E1 {: RESULT=new NegativeExpr(E1); RESULT.setLine(E1left); :}
+							| (PositiveExpr) Expression:E1 {: RESULT=new PositiveExpr(E1); RESULT.setLine(E1left); :}
 ;
 
-MinusExpr ::= (NegativeExpr) MINUS {: RESULT=new NegativeExpr(); :}
-				| (PositiveExpr) {: RESULT=new PositiveExpr(); :} /* epsilon */
-				;
-				
-AddopTerm ::= (YesAddopTerm) AddopTerm:te Addop:A1 Term:t {: RESULT=new YesAddopTerm(te, A1, t); RESULT.setLine(teleft); :} 
-				| (NoAddopTerm) {: RESULT=new NoAddopTerm(); :} /* epsilon */
-;
+Expression ::= (AddExpr) Expression:te Addop:A1 Term:t {: RESULT=new AddExpr(te, A1, t); RESULT.setLine(teleft); :}
+				| (TermExpr) Term:T {: RESULT=new TermExpr(T); RESULT.setLine(Tleft); :}
+				; 
 
 Factor ::= (Variable) Designator:d {: RESULT=new Variable(d); RESULT.setLine(dleft); :}
 			| (ConstFactors) ConstantVars:C1 {: RESULT=new ConstFactors(C1); RESULT.setLine(C1left); :}
@@ -317,21 +319,21 @@ Term ::= (Term) Factor:F1 MulopFactor:M2 {: RESULT=new Term(F1, M2); RESULT.setL
 MulopFactor ::= (YesMulopFactor) Mulop:M1 Factor:F2 MulopFactor:M3 {: RESULT=new YesMulopFactor(M1, F2, M3); RESULT.setLine(M1left); :}
 				| (NoMulopFactor) {: RESULT=new NoMulopFactor(); :} /* epsilon */
 				;
-				
 Condition ::= (Condition) CondTerm:C1 OrCondTerm:O2 {: RESULT=new Condition(C1, O2); RESULT.setLine(C1left); :}
 ;
 
-OrCondTerm ::= (YesOrCondTerm) OrCondTerm:O1 OR CondTerm:C2 {: RESULT=new YesOrCondTerm(O1, C2); RESULT.setLine(O1left); :}
+OrCondTerm ::= (YesOrCondTerm) OR CondTerm:C1 OrCondTerm:O2 {: RESULT=new YesOrCondTerm(C1, O2); RESULT.setLine(C1left); :}
 				| (NoOrCondTerm) {: RESULT=new NoOrCondTerm(); :} /* epsilon */
 				;
 
 CondTerm ::= (CondTerm) CondFact:C1 AndCondFact:A2 {: RESULT=new CondTerm(C1, A2); RESULT.setLine(C1left); :}
 ;
 
-AndCondFact ::= (YesAndCondFact) AndCondFact:A1 AND CondFact:C2 {: RESULT=new YesAndCondFact(A1, C2); RESULT.setLine(A1left); :} 
+AndCondFact ::= (YesAndCondFact) AND CondFact:C1 AndCondFact:A2 {: RESULT=new YesAndCondFact(C1, A2); RESULT.setLine(C1left); :}
 				| (NoAndCondFact) {: RESULT=new NoAndCondFact(); :} /* epsilon */
 				;
 				
 CondFact ::= (MultiCondFact) NonTernaryExpression:N1 Relop:R2 NonTernaryExpression:N3 {: RESULT=new MultiCondFact(N1, R2, N3); RESULT.setLine(N1left); :}
 				| (SingleCondFact) NonTernaryExpression:N1 {: RESULT=new SingleCondFact(N1); RESULT.setLine(N1left); :}
-				;	
+;
+							

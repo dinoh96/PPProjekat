@@ -1,0 +1,28 @@
+// program koji nece proci semanticku analizu
+
+program error
+	int g1;
+	bool g2 = true;
+	const int a =  , b = ;
+{
+
+int saberi(int ){
+	return 1;
+}
+
+void main()
+	bool nizb[];
+	int niza[];
+	
+	int l1;
+	char l2;
+{
+	nizb = new bool[2];
+
+	l1 = 1+;
+	l2 = ;
+	
+	if (nizb[0] = true) print(0);
+	
+}
+}

@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/1/2021 22:30:28
+// 10/1/2021 1:50:1
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class FormalParamDeclError extends FormalParamDecl {
+public class Comma extends CommaOrSemi {
 
-    public FormalParamDeclError () {
+    public Comma () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class FormalParamDeclError extends FormalParamDecl {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("FormalParamDeclError(\n");
+        buffer.append("Comma(\n");
 
         buffer.append(tab);
-        buffer.append(") [FormalParamDeclError]");
+        buffer.append(") [Comma]");
         return buffer.toString();
     }
 }

@@ -1,6 +1,4 @@
-// Test301
-
-program test301
+program test
 	int niz[];
 	char nizch[];
 
@@ -26,7 +24,7 @@ program test301
 		C = 'C';
 		D = 'd';
 		
-		//if (a || b) print(1);
+		if (a || b) print(1);
 		
 		print (boolVar ? a : b);
 		
@@ -39,6 +37,8 @@ program test301
 		boolVar = false;
 		if (a == b) print(1);
 		else print(0);
+		
+		print(f(a, A));
 		
 	}
 }

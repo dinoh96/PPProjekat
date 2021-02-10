@@ -236,16 +236,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		report_info("Obradjuje se funkcija " + voidMethodTypeName.getMethName(), voidMethodTypeName);
 	}
 	
-	public void visit(FormalParameterDecl formalParameterDecl) {
-		String varName = formalParameterDecl.getName(); 
+	public void visit(FormalParamDecl formalParamDecl) {
+		String varName = formalParamDecl.getName(); 
 		
 		if (Tab.currentScope().findSymbol(varName) != null) {
-			report_error("Deklarisan je vec formalni parametar sa imenom "+ varName, formalParameterDecl);
+			report_error("Deklarisan je vec formalni parametar sa imenom "+ varName, formalParamDecl);
 			return;
 		}		
 		Obj var;
 		
-		if (formalParameterDecl.getArrayVarNode() instanceof ArrayDecl) {
+		if (formalParamDecl.getArrayVarNode() instanceof ArrayDecl) {
 			// array declaration
 			var = Tab.insert(Obj.Var, varName, new Struct(Struct.Array, currentType));
 		}else {
@@ -287,6 +287,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}else if (constFactors.getConstantVars() instanceof CharVar) {
 			// char const
 			constType = Tab.charType;
+			report_info("Upotreba simbolicke konstance '" + ((CharVar)constFactors.getConstantVars()).getValue() + "' na liniji " + constFactors.getLine(), null);
 		}else if (constFactors.getConstantVars() instanceof BoolVar) {
 			// boolean const
 			constType = Boolean;
@@ -323,7 +324,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				funcCall.struct = Tab.noType;
 				return;
 			}
-			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
+			report_info("Pronadjen poziv globalne funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
 			funcCall.struct = func.getType();
 			
 			ArrayList<Expr> listActualParameters = new ArrayList<Expr>();
@@ -423,8 +424,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error_v2("Ime "+designatorNonArray.getName()+" nije deklarisano! ", designatorNonArray);
 		}
 		if (obj.getFpPos() > 0) {
-			report_info("Koristi se formalni parametar '" + designatorNonArray.getName() + "'"/* + obj.toString()*/, designatorNonArray);
+			report_info("Koristi se formalni argument '" + designatorNonArray.getName() + "'"/* + obj.toString()*/, designatorNonArray);
 		}
+		else {
+			if (obj.getKind() == Obj.Var)
+				report_info("Koristi se " + (obj.getLevel() == 0 ? "globalna" : "lokalna") + " promenljiva '" + designatorNonArray.getName() + "'"/* + obj.toString()*/, designatorNonArray);
+		}
+		
 			
 		designatorNonArray.obj = obj;
 	}
@@ -449,7 +455,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			return;
 		}
 		if (obj.getFpPos() > 0) {
-			report_info("Koristi se formalni parametar '" + designatorArrayName.getName() + "'"/* + obj.toString() */, designatorArrayName);
+			report_info("Koristi se formalni argument '" + designatorArrayName.getName() + "'"/* + obj.toString() */, designatorArrayName);
 		}
 		designatorArrayName.obj = obj;
 	}

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/1/2021 22:30:28
+// 10/1/2021 1:50:1
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,7 +11,6 @@ public interface Visitor {
     public void visit(Mulop Mulop);
     public void visit(Matched Matched);
     public void visit(Relop Relop);
-    public void visit(FormalParamDecl FormalParamDecl);
     public void visit(StatementList StatementList);
     public void visit(MulopFactor MulopFactor);
     public void visit(Addop Addop);
@@ -32,6 +31,7 @@ public interface Visitor {
     public void visit(MethodTypeName MethodTypeName);
     public void visit(DesignatorStatement DesignatorStatement);
     public void visit(AndCondFact AndCondFact);
+    public void visit(CommaOrSemi CommaOrSemi);
     public void visit(ArrayVarNode ArrayVarNode);
     public void visit(Statement Statement);
     public void visit(Expression Expression);
@@ -81,6 +81,7 @@ public interface Visitor {
     public void visit(ProcCall ProcCall);
     public void visit(DesignatorDecrement DesignatorDecrement);
     public void visit(DesignatorIncrement DesignatorIncrement);
+    public void visit(ErrorAssignment ErrorAssignment);
     public void visit(DesignatorAssignment DesignatorAssignment);
     public void visit(GreaterEqual GreaterEqual);
     public void visit(GreaterThan GreaterThan);
@@ -101,7 +102,6 @@ public interface Visitor {
     public void visit(NoReturnExpr NoReturnExpr);
     public void visit(YesReturnExpr YesReturnExpr);
     public void visit(BlockStatement BlockStatement);
-    public void visit(ErrorStmt ErrorStmt);
     public void visit(DoWhile DoWhile);
     public void visit(MatchedIf MatchedIf);
     public void visit(ContinueStmt ContinueStmt);
@@ -122,8 +122,8 @@ public interface Visitor {
     public void visit(MatchedStmt MatchedStmt);
     public void visit(NoStmt NoStmt);
     public void visit(Statements Statements);
-    public void visit(FormalParamDeclError FormalParamDeclError);
-    public void visit(FormalParameterDecl FormalParameterDecl);
+    public void visit(FormalParamDecl FormalParamDecl);
+    public void visit(FormalParamListError FormalParamListError);
     public void visit(SingleFormalParamDecl SingleFormalParamDecl);
     public void visit(FormalParamDecls FormalParamDecls);
     public void visit(NoFormParam NoFormParam);
@@ -137,8 +137,11 @@ public interface Visitor {
     public void visit(NoArrayDecl NoArrayDecl);
     public void visit(ArrayDecl ArrayDecl);
     public void visit(VarNode VarNode);
+    public void visit(ErrorListOfVariables ErrorListOfVariables);
     public void visit(SingleVariable SingleVariable);
     public void visit(MultipleVariables MultipleVariables);
+    public void visit(Semi Semi);
+    public void visit(Comma Comma);
     public void visit(ErrorConstNodeComma ErrorConstNodeComma);
     public void visit(ConstantNode ConstantNode);
     public void visit(SingleConstant SingleConstant);

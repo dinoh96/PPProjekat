@@ -338,7 +338,7 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.print);
 		}else {
 			//char
-			Code.put(Code.const_2);
+			Code.put(Code.const_1);
 			Code.put(Code.bprint);
 		}
 		
